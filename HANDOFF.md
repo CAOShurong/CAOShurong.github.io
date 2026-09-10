@@ -1,10 +1,10 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 4
-updated_at: "2026-09-11T01:31:16+08:00"
+handoff_revision: 5
+updated_at: "2026-09-11T01:35:06+08:00"
 updated_by: Codex
-base_revision: git:472e9f95f2925d93abe971fdbded9f2d1a0bd4e2
-workspace_fingerprint: sha256:3fb911e5f1acd3d67e8e01e7d9e60c1b5650de0dbab8fc4fbd10bf3e70be59b1
+base_revision: git:86976883d94aedf2f9ba9b62af7b027416d8a236
+workspace_fingerprint: sha256:e99a5425bff77c6edc706a5d16eb7d44a55ff1c30fb39f8e610e815acb2533f9
 context_fingerprint: sha256:520681b76180f3052f27ea15f50122ca3bd76b5c1af42799f15e3ad133948cdb
 status: complete
 ---
@@ -13,6 +13,7 @@ status: complete
 Published bilingual academic website ready for the owner's review at https://caoshurong.github.io/.
 ## Confirmed state
 ### Completed
+- Prominent GitHub Profile / GitHub 主页 button in home hero and GitHub link in primary navigation; live click verified. Latest deployment: 8697688, Actions run 34508955205.
 - Full EN/ZH site: 22 routes, research, papers, projects and details, experience, contact and public CV.
 - Visual revision after owner rejected first pass: exact new portrait, official NJU/CUHK crests, no generic stack graphic, publication main column and academic/open-source sidebar.
 - Research/publications/projects dropdowns, mobile navigation, breadcrumbs, related projects, figure modal, BibTeX copy and PDF download.
