@@ -11,6 +11,7 @@ Date: 11 September 2026. Capability: full agent, with actual in-app browser inte
 - PASS: new homepage upstream link navigated to actual contribution section.
 - PASS: public CV downloaded through the actual link and opened in browser, one page; extracted PDF text privacy checked. Source originals untouched.
 - PASS: DOI link clicked through to IEEE document 11399434; arXiv title/authors matched. Patent page observed inventor, assignee and grant timeline. Repository/software links HTTP checked.
+- Optional HTML print button was removed after the embedded browser did not expose a print preview; CV is available through the tested PDF open/download controls.
 - NOT_RUN: sending email and physical printing; neither is required to browse or contact via the displayed address.
 
 ## Published acceptance

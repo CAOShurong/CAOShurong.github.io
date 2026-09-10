@@ -52,5 +52,4 @@
     dialog.addEventListener('close', () => { dialog.remove(); link.focus(); });
     dialog.showModal();
   }));
-  document.querySelector('.print-cv')?.addEventListener('click', () => window.print());
 })();

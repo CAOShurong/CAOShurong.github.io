@@ -1,10 +1,10 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 1
-updated_at: "2026-09-11T03:30:00+08:00"
+handoff_revision: 2
+updated_at: "2026-09-11T01:13:01+08:00"
 updated_by: Codex
-base_revision: git:ab8106159d6bbf1a5268f75cda498cde62461a13
-workspace_fingerprint: sha256:e64ef4543345564d959cc74df9675e86a414574a745c3b0e20325c0f352bcb54
+base_revision: git:4f19885bace44d72be2d017e1d72ae6ceb6f0806
+workspace_fingerprint: sha256:1561500dbf94dae1b3ceb6211b3697bea1d81927243997aef66fb46a05672ae4
 context_fingerprint: sha256:db914d9f5c433fc8e3f80dec3c626f13f37ec9a49bcabaadb33b7f8be9d90cc0
 status: active
 ---

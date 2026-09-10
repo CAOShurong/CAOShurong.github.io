@@ -91,7 +91,7 @@ def contact(l):
 
 def cv(l):
     s=heading('Curriculum vitae' if not l else '个人简历',tx('Shurong Cao','曹书嵘',l),tx('PhD student in Electronic Engineering · The Chinese University of Hong Kong','香港中文大学 · 电子工程博士研究生',l))
-    s+=f'<div class="cv-actions">{link("/assets/Shurong-Cao-CV.pdf",tx("Open PDF · English","打开 PDF · 英文",l)+" ↗","button")}<a class="button secondary" href="/assets/Shurong-Cao-CV.pdf" download>{tx("Download CV","下载简历",l)} ↓</a><button class="print-cv button secondary" type="button">{tx("Print this page","打印本页",l)}</button></div>'
+    s+=f'<div class="cv-actions">{link("/assets/Shurong-Cao-CV.pdf",tx("Open PDF · English","打开 PDF · 英文",l)+" ↗","button")}<a class="button secondary" href="/assets/Shurong-Cao-CV.pdf" download>{tx("Download CV","下载简历",l)} ↓</a></div>'
     s+=f'<section class="section">{section(tx("Education","教育",l))}{education(l)}</section>'
     s+=f'<section class="section">{section(tx("Research interests","研究兴趣",l))}<p>{tx("Semiconductor devices and fabrication; BEOL-compatible electronics; oxide and p-type semiconductors; low-temperature processing; monolithic 3D and complementary integration.","半导体器件与工艺、BEOL 兼容电子器件、氧化物与 p 型半导体、低温加工、单片三维与互补集成。",l)}</p></section>'
     s+=f'<section class="section">{section(tx("Publications","论文",l))}'+''.join(f'<article class="cv-publication"><h3>{p["title"]}</h3><p>{p["authors"]}</p><p>{p["venue"]} <strong>{p["role"][l]}</strong></p></article>' for p in PAPERS)+'</section>'
