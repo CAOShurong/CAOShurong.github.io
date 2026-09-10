@@ -1,4 +1,6 @@
 # Decision Log
+
+# Decisions
 ## D-20260911-004500-pages
 User-selected GitHub Pages takes precedence over Sites hosting/scaffold defaults. Static site/ is isolated deployment payload. Hand-off and private research files are not website routes.
 ## D-20260911-004501-content
