@@ -32,13 +32,13 @@ section('Selected Research & Engineering')
 for title,body in [
 ('Advanced packaging and nano-TSV modeling','Developed Python-assisted equivalent-material modeling workflows and thermo-mechanical simulations of 2.5D chip stacks using COMSOL and ANSYS at Nanjing University.'),
 ('Vacuum MOSFET sensing','Worked on COMSOL model development, device architecture refinement, simulation verification, and model integration in a national-level undergraduate innovation project. Co-inventor of granted Chinese patent CN120352074B (2025).'),
-('Summer research at HKUST(GZ), 2025','Modeled optical neuromemristors and nano-antennas, explored geometry optimization, and participated in device-characterization work.'),
+('Research exchange at HKUST (Guangzhou)','Modeled optical neuromemristors and nano-antennas, explored geometry optimization, and participated in device-characterization work.'),
 ('FPGA robotic system','Integrated PYNQ-Z2, Raspberry Pi 5, and STM32 hardware, with electronic-module assembly, wireless motion control, radar-based SLAM, and IMU drift compensation.')]:p(f'<b>{title}.</b> {body}')
 section('Open-Source Engineering')
 p('<b>BenchLineage maintainer.</b> Research provenance, calibration records, uncertainty budgets, evidence bundles, and ELN archive interoperability. Related contributions were integrated into the ELN format checks and eLabFTW importer tests.')
 p('<b>Upstream contributor.</b> 37 merged pull requests across 22 external repositories, including Astropy, cibuildwheel, the ELN File Format, and GitHub MCP Server (GitHub snapshot: 11 September 2026).')
 section('Recognition & Communication')
-p('<b>National Second Prize, 2024.</b> FPGA Innovation Design Track Finals, 7th National College Embedded Chip and System Design Competition.<br/><b>People’s Scholarship, 2023 and 2024.</b> Nanjing University.<br/><b>Team leader and commencement speaker, 2024.</b> Hardware design program at St Catharine’s College, Cambridge.')
+p('<b>National Second Prize, 2024.</b> FPGA Innovation Design Track Finals, 7th National College Embedded Chip and System Design Competition.<br/><b>People’s Scholarship, 2023 and 2024.</b> Nanjing University.<br/><b>Team leader and commencement speaker.</b> Hardware design program at St Catharine’s College, Cambridge.')
 section('Technical Background')
 p('Semiconductor-device modeling; COMSOL and ANSYS; Python, C, PyTorch, Git and Linux; Verilog, FPGA, STM32, ROS and embedded systems. Mandarin and English.')
 def footer(canvas,doc):
