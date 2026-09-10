@@ -20,3 +20,5 @@ body{background:#fff}h1,h2{font-weight:500}h3{line-height:1.4}.container,.header
 @media(prefers-reduced-motion:no-preference){.project-card{transition:box-shadow .2s,transform .2s}.project-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px #203f5810}}
 
 .project-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px;align-items:start}.project-detail-layout:not(:has(figure)){display:block;max-width:850px}.project-detail-layout .detail-figure{margin:0;padding:20px;max-width:none}.project-detail-layout .detail-figure img{max-height:440px}.project-detail-layout .reading section:first-child{padding-top:0}.project-detail-layout .reading h2{font-size:1.45rem}.project-detail-layout .reading p{font-size:.96rem;line-height:1.8}.project-detail-layout .reading section+section{border-top:1px solid var(--line);margin-top:8px}.related-projects{margin-top:35px}@media(max-width:800px){.project-detail-layout{grid-template-columns:1fr;gap:28px}.project-detail-layout .detail-figure{max-width:600px}.project-detail-layout .detail-figure img{max-height:360px}}
+
+.github-nav{font-weight:600}.github-profile{font-weight:600}
