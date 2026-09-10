@@ -46,4 +46,8 @@ Current working-tree checks (previous sections are historical):
 - PASS: mobile menu > Research submenu > p-type theme. EN switch preserves theme-02. Removed additive anchor scroll margin; intrinsic image sizes reserve layout space.
 - PASS: research and FALCO figure dialogs open/close, home BibTeX copy reports Copied. New public CV parsed as one page, no private university address or explicit author-role emphasis.
 - Research detail now explains process constraints and integration questions beyond homepage summaries. Third-party figures have DOI and linked license attribution; own papers use architecture/benchmark figures.
-- Pending at this checkpoint: deployment and fresh live acceptance.
+- PASS: deployed source 92c28aaf1a6965efa87cb9ff8697db4c07d57483, Actions run 34544140889 successful (preceding visual deployment 671d5b3, run 34544094294).
+- PASS: all 22 live routes visited at 390px, one h1, no horizontal overflow or failed loaded images. Desktop live home/research figures and Chinese vacuum project visually reviewed; mobile education/exchange and Texture-AD modal reviewed.
+- PASS: live mobile Menu > Publications > Texture-AD, core figure opened/closed; EN switch preserved #texture-ad. Hero GitHub Profile click reached the correct CAOShurong profile. Homepage vacuum project link reached the illustrated detail page.
+- PASS: live CV download event, opened and visually viewed PDF in browser; parsed actual live response as one page with updated exchange wording and no private contacts/role emphasis. Exchange years removed from the public PDF as well.
+- Subjective owner approval remains pending. External email delivery and physical printing NOT_RUN.

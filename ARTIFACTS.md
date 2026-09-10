@@ -18,7 +18,7 @@ Public assets, September 2026. Private source documents are excluded.
 | A12 | assets/research-m3d.jpg | 2026-09-11 | 81482 | 06ad5159bca38f71ad16886f5319c9188c492cae11bc7da50846e8fcbb507222 | VERIFIED | See ASSET_SOURCES.md |
 | A13 | assets/research-ptype.jpg | 2026-09-11 | 107072 | d5ae3c408d04ff7afd7c6b88fc297a7decec00d3f45fd34f907fe95971eb60a8 | VERIFIED | See ASSET_SOURCES.md |
 | A14 | assets/robot.webp | 2026-09-11 | 52352 | feef8b64fd048c64e2bcd5dc19dcff3e5e87a7aa8cf1744e59d35271c35e692e | VERIFIED | See ASSET_SOURCES.md |
-| A15 | assets/Shurong-Cao-CV.pdf | 2026-09-11 | 5148 | e3bb509b6afa28980763cbba6fefe2169d1c80b53bac1553a110685924270c72 | VERIFIED | See ASSET_SOURCES.md |
+| A15 | assets/Shurong-Cao-CV.pdf | 2026-09-11 | 5147 | 195ce893e9d67cfeea9f56f02910c404e97e4b27dc26ebe279912862f82f6e71 | VERIFIED | See ASSET_SOURCES.md |
 | A16 | assets/texture-overview.jpg | 2026-09-11 | 1356997 | 58a86c549370ace9829aac53ca5e3e03bad3f43fcb13d7184c9640a13519e6ac | VERIFIED | See ASSET_SOURCES.md |
 | A17 | assets/texture-samples.webp | 2026-09-11 | 161728 | 36753ff4d479abf6fe17fa6fbe06411fc7a37d12ae68b6cf5a07b923fd24c2e6 | VERIFIED | See ASSET_SOURCES.md |
 | A18 | assets/vacuum-mechanism.jpg | 2026-09-11 | 63396 | 2acec70b3b201402a86c9d531177eb091e7ca5f82087e1c3ef4e285bd9df53dc | VERIFIED | See ASSET_SOURCES.md |
