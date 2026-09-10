@@ -7,7 +7,7 @@ updated_at: "2026-09-11T00:45:00+08:00"
 ## Objective
 Complete bilingual academic website at https://caoshurong.github.io, authorized by user on 2026-09-11 (Just do it, 开始吧). High-quality, real browser verification required before completion. User reviews in morning; do not artificially delay or claim unverified completion.
 ## Deliverables
-English default, full Chinese equivalent, corresponding route switching and remembered language. Home, research, publications, project details, education/experience, public CV and contact. Actual paper figures and selected project visuals. NJU undergraduate to CUHK PhD progression. Maintainer and upstream contributor identity. Public-safe downloadable CV. Real local and live browser acceptance. Portable project handoff.
+English default, full Chinese equivalent, corresponding route switching and remembered language. Home, research, publications, project details, education/experience, public CV and contact. Actual paper figures and selected project visuals. Latest user supplied gray-jacket portrait; official NJU/CUHK crests; no generic vertical-integration hero. Publication main column, education/open-source sidebar and explicit dropdown navigation. NJU undergraduate to CUHK PhD progression. Maintainer and upstream contributor identity. Public-safe downloadable CV. Real local and live browser acceptance. Portable project handoff.
 ## Scope and non-goals
 Warm white/navy/slate, serif headings, readable body, fine rules, restrained visuals based on four reference mockups. No invented reference portraits/papers/dates. No flashy gradients, irrelevant badges, empty controls or fake metrics. No paid service. Original documents untouched. Do not modify other repos.
 ## Project map

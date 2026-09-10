@@ -16,3 +16,12 @@ Date: 11 September 2026. Capability: full agent, with actual in-app browser inte
 
 ## Published acceptance
 Pending deployment and live browser verification.
+
+## Visual revision after user feedback
+- Replaced portrait with exact newly supplied image; removed old portrait and generic layered illustration from current deployment assets.
+- Added official CUHK and NJU crests; home composition rebuilt as publication main column and education/open-source sidebar.
+- Added explicit research, publication and project submenus, project breadcrumbs and related-project navigation.
+- PASS: desktop project submenu opened and FPGA detail link followed; desktop figure/content split visually reviewed.
+- PASS: mobile Menu and Projects submenu expanded, vacuum-sensor detail followed, switched to Chinese counterpart and reloaded.
+- PASS: all 22 revised routes visited in browser at 320px; one h1 per page, no horizontal overflow and no failed loaded images.
+- PASS: desktop home, publication/education sidebar, mobile home and Chinese device project visually reviewed. New public CV remains one page after adding verified patent.

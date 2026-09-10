@@ -19,7 +19,7 @@ def heading(kicker,title,desc=''):
     return f'<header class="page-heading"><p class="eyebrow">{kicker}</p><h1>{title}</h1>{f"<p class=lead>{desc}</p>" if desc else ""}</header>'
 def section(title,more='',href=''):
     return f'<div class="section-title"><h2>{title}</h2>{link(href,more+" <span aria-hidden=true>↗</span>") if href else ""}</div>'
-def portrait(l):return img('portrait.webp',tx('Portrait of Shurong Cao','曹书嵘个人照片',l),'portrait',True)
+def portrait(l):return img('portrait-2026.jpg',tx('Portrait of Shurong Cao','曹书嵘个人照片',l),'portrait',True)
 
 def paper(p,l,full=False):
     short=f'<span class="pill">{p["role"][l]}</span>'
@@ -28,28 +28,32 @@ def paper(p,l,full=False):
     if full:
         body+=f'<details><summary>{tx("About this work","关于这项研究",l)}</summary><p>{p["abstract"][l]}</p></details>'
         body+=f'<details class="citation"><summary>{tx("Cite this work","引用这篇论文",l)}</summary><pre>{esc(p["bib"])}</pre><button type="button" class="copy-cite" data-copy="{p["id"]}">{tx("Copy BibTeX","复制 BibTeX",l)}</button><a href="/assets/{p["id"]}.bib" download>{tx("Download .bib","下载 .bib",l)}</a><span role="status" class="copy-status"></span></details>'
-    figure_url = '/assets/'+p['image'] if full else url('publications',l)+'#'+p['id']
-    return f'<article class="paper" id="{p["id"]}"><a class="paper-figure" href="{figure_url}" aria-label="{esc(p["title"])}">{img(p["image"],p["alt"][l])}</a><div><div class="paper-top"><span class="eyebrow">{p["short"]}</span>{short}</div><h3>{p["title"]}</h3><p class="authors">{p["authors"]}</p><p class="venue">{p["venue"]}</p><p class="author-note">{p["note"][l]}</p>{body}<div class="text-links">{links}</div></div></article>'
+    display_image='falco-results.webp' if p['id']=='falco-wafer' and not full else p['image']
+    display_alt=tx('FALCO-WAFER attention visualizations on wafer defects','FALCO-WAFER 晶圆缺陷注意力可视化',l) if display_image=='falco-results.webp' else p['alt'][l]
+    figure_url = '/assets/'+display_image if full else url('publications',l)+'#'+p['id']
+    return f'<article class="paper" id="{p["id"]}"><a class="paper-figure" href="{figure_url}" aria-label="{esc(p["title"])}">{img(display_image,display_alt)}</a><div><div class="paper-top"><span class="eyebrow">{p["short"]}</span>{short}</div><h3>{p["title"]}</h3><p class="authors">{p["authors"]}</p><p class="venue">{p["venue"]}</p><p class="author-note">{p["note"][l]}</p>{body}<div class="text-links">{links}</div></div></article>'
 
 def research_grid(l):
     return '<div class="research-grid">'+''.join(f'<a href="{url("research",l)}#theme-{r[0]}" class="research-card"><span class="research-number">{r[0]}</span><h3>{r[2 if l else 1]}</h3><p>{r[4 if l else 3]}</p><span class="arrow" aria-hidden="true">↗</span></a>' for r in RESEARCH)+'</div>'
 
 def education(l):
-    return f'<div class="education"><article><span class="school-monogram">CUHK</span><div><span class="date">2026 — {tx("present","至今",l)}</span><h3>{tx("The Chinese University of Hong Kong","香港中文大学",l)}</h3><p>{tx("PhD student · Electronic Engineering","电子工程博士研究生",l)}</p><p class="muted">{tx("Supervisor: Prof. Ni Zhao","导师：Prof. Ni Zhao",l)}</p></div></article><article><span class="school-monogram nju">NJU</span><div><span class="date">2022 — 2026</span><h3>{tx("Nanjing University","南京大学",l)}</h3><p>{tx("B.Eng. · Integrated Circuit and System Design","工学学士 · 集成电路设计与集成系统",l)}</p><p class="muted">{tx("School of Integrated Circuits · Suzhou Campus","集成电路学院 · 苏州校区",l)}</p></div></article></div>'
+    return f'<div class="education"><article><span class="school-crest cuhk-crest"><img src="/assets/cuhk-logo.png" alt="CUHK crest"></span><div><span class="date">2026 — {tx("present","至今",l)}</span><h3>{tx("The Chinese University of Hong Kong","香港中文大学",l)}</h3><p>{tx("PhD student · Electronic Engineering","电子工程博士研究生",l)}</p><p class="muted">{tx("Supervisor: Prof. Ni Zhao","导师：Prof. Ni Zhao",l)}</p></div></article><article><span class="school-crest"><img src="/assets/nju-crest.svg" alt="Nanjing University crest"></span><div><span class="date">2022 — 2026</span><h3>{tx("Nanjing University","南京大学",l)}</h3><p>{tx("B.Eng. · Integrated Circuit and System Design","工学学士 · 集成电路设计与集成系统",l)}</p><p class="muted">{tx("School of Integrated Circuits · Suzhou Campus","集成电路学院 · 苏州校区",l)}</p></div></article></div>'
 
 def project_card(p,l):
     visual=img(p['image'],p.get('caption',p['title'])[l]) if p.get('image') else f'<div class="project-symbol" aria-hidden="true">{ "<span>V</span><small>DEVICE · SENSING</small>" if p["id"]=="vacuum-sensor" else "<span>BL</span><small>EXPERIMENT · PROVENANCE</small>"}</div>'
     return f'<article class="project-card"><a class="project-visual" href="{url("projects/"+p["id"],l)}" aria-label="{esc(p["title"][l])}">{visual}</a><div class="project-content"><p class="eyebrow">{p["tag"][l]}</p><h3>{link(url("projects/"+p["id"],l),p["title"][l]+"&nbsp;↗")}</h3><p>{p["summary"][l]}</p></div></article>'
 
 def home(l):
-    intro=tx('I am a PhD student in Electronic Engineering at The Chinese University of Hong Kong, working with Prof. Ni Zhao. I am exploring emerging semiconductor devices and fabrication approaches for BEOL-compatible and monolithic 3D electronics.','我是香港中文大学电子工程博士研究生，导师为 Prof. Ni Zhao。目前正在探索面向 BEOL 兼容电子器件与单片三维集成的新型半导体器件和制造工艺。',l)
-    s=f'<section class="hero"><div class="hero-copy"><p class="eyebrow">{tx("Electronic engineering · Hong Kong","电子工程 · 香港",l)}</p><div class="hero-identity">{portrait(l)}<div><h1>{tx("Shurong Cao","曹书嵘",l)}</h1><p class="name-secondary">{tx("曹书嵘","Shurong Cao",l)}</p><p class="hero-role">{tx("PhD Student","博士研究生",l)}<br>{tx("The Chinese University of Hong Kong","香港中文大学",l)}</p></div></div><p class="intro">{intro}</p><div class="hero-actions">{link(url("research",l),tx("Explore my research","了解我的研究",l)+" <span aria-hidden=true>↗</span>","button")}{link(url("cv",l),tx("View CV","查看简历",l),"button secondary")}{link(url("contact",l),tx("Get in touch","联系我",l),"quiet-link")}</div></div><figure class="hero-art"><img src="/assets/layers.svg" alt="{tx("Conceptual illustration of vertically integrated semiconductor layers","垂直集成半导体层的概念示意图",l)}" width="520" height="430"><figcaption>{tx("Materials. Devices. Integration.","材料 · 器件 · 集成",l)}</figcaption></figure></section>'
-    s+=f'<section class="section compact">{section(tx("Research interests","研究兴趣",l))}{research_grid(l)}</section>'
-    s+=f'<section class="section">{section(tx("Selected publications","代表论文",l),tx("All publications","全部论文",l),url("publications",l))}<p class="section-intro">{tx("Two publications, including one co-first-author IEEE conference paper.","两篇研究论文，其中一篇为 IEEE 会议共同第一作者论文。",l)}</p>'+''.join(paper(p,l) for p in PAPERS)+'</section>'
-    s+=f'<section class="section">{section(tx("Research into practice","从研究到实践",l),tx("Explore projects","查看项目",l),url("projects",l))}<div class="projects-grid home-projects">'+''.join(project_card(p,l) for p in [PROJECTS[0],PROJECTS[3]])+'</div></section>'
-    s+=f'<p class="home-upstream">{link(url("projects",l)+"#upstream",tx("37 merged upstream contributions across 22 repositories","37 个上游已合并贡献，覆盖 22 个外部仓库",l)+" ↗")}</p>'
-    s+=f'<section class="section">{section(tx("Education & affiliation","教育与学术经历",l),tx("Full experience","完整经历",l),url("experience",l))}{education(l)}</section>'
-    s+=f'<section class="contact-band"><div><p class="eyebrow">{tx("Research & collaboration","研究与合作",l)}</p><h2>{tx("Let’s connect.","期待交流。",l)}</h2><p>{tx("I welcome conversations about semiconductor devices, research software, and engineering collaboration.","欢迎就半导体器件、科研软件与工程合作展开交流。",l)}</p></div>{link("mailto:"+EMAIL,EMAIL+" ↗")}</section>'
+    intro=tx('I am a PhD student in Electronic Engineering at The Chinese University of Hong Kong, advised by Prof. Ni Zhao. My current interests centre on emerging semiconductor devices, low-temperature fabrication, and monolithic 3D integration.','我是香港中文大学电子工程博士研究生，导师为 Prof. Ni Zhao。目前关注新型半导体器件、低温制造工艺与单片三维集成，正在探索材料、器件和工艺之间的连接。',l)
+    s=f'<section class="hero"><div class="portrait-panel">{portrait(l)}<p>{tx("Hong Kong · Electronic Engineering","香港 · 电子工程",l)}</p></div><div class="hero-copy"><p class="eyebrow">{tx("Semiconductor devices & integration","半导体器件与集成",l)}</p><h1>{tx("Shurong Cao","曹书嵘",l)}<span class="name-secondary">{tx("曹书嵘","Shurong Cao",l)}</span></h1><p class="hero-role">{tx("PhD Student · The Chinese University of Hong Kong","博士研究生 · 香港中文大学",l)}</p><div class="hero-rule"></div><p class="intro">{intro}</p><p class="intro secondary-intro">{tx("An integrated-circuit foundation, with experience spanning device simulation, industrial vision, and open-source research software.","以集成电路为基础，连接器件仿真、工业视觉与开源科研软件。",l)}</p><div class="hero-actions">{link(url("research",l),tx("Research interests","研究方向",l)+" ↗","button")}{link(url("cv",l),tx("Curriculum vitae","个人简历",l),"button secondary")}{link("mailto:"+EMAIL,tx("Email","邮件联系",l)+" ↗","quiet-link")}</div></div></section>'
+    s+=f'<section class="research-strip">{research_grid(l)}</section>'
+    s+='<div class="home-columns"><div class="home-main">'
+    s+=f'<section class="section">{section(tx("Selected publications","代表论文",l),tx("All publications","全部论文",l),url("publications",l))}<p class="section-intro">{tx("Two publications · One co-first-author IEEE conference paper","两篇研究论文 · 一篇 IEEE 会议共同第一作者论文",l)}</p>'+''.join(paper(p,l) for p in PAPERS)+'</section>'
+    s+=f'<section class="section">{section(tx("Research into practice","从研究到实践",l),tx("All projects","全部项目",l),url("projects",l))}<div class="projects-grid home-projects">'+''.join(project_card(p,l) for p in [PROJECTS[0],PROJECTS[3]])+'</div></section></div>'
+    s+=f'<aside class="home-sidebar"><section class="section">{section(tx("Education & affiliation","教育与学术经历",l))}{education(l)}{link(url("experience",l),tx("Full experience","完整经历",l)+" ↗","aside-link")}</section>'
+    s+=f'<section class="sidebar-contributions"><p class="eyebrow">{tx("Open-source contributor","开源贡献",l)}</p><div class="side-stat"><strong>37</strong><span>{tx("merged upstream PRs","个上游已合并 PR",l)}</span></div><p>{tx("Contributions across 22 external repositories, including Astropy, cibuildwheel, and GitHub MCP Server.","贡献被 22 个外部仓库接纳，包括 Astropy、cibuildwheel 与 GitHub MCP Server。",l)}</p>{link(url("projects",l)+"#upstream",tx("Explore the contributions","查看开源贡献",l)+" ↗")}<small>{tx("Snapshot · September 2026","统计更新于 2026 年 9 月",l)}</small></section>'
+    s+=f'<figure class="campus-note">{img("cuhk-campus.jpg",tx("CUHK campus and Tolo Harbour","香港中文大学校园与吐露港",l))}<figcaption>{tx("The Chinese University of Hong Kong","香港中文大学",l)}<br>{link("https://www.cuhk.edu.hk/english/campus/campus.html",tx("Campus photograph · CUHK","校园图片 · CUHK",l))}</figcaption></figure></aside></div>'
+    s+=f'<section class="contact-band"><div><p class="eyebrow">{tx("Research & collaboration","研究与合作",l)}</p><h2>{tx("Let’s exchange ideas.","期待与你交流。",l)}</h2><p>{tx("Semiconductor devices, research software, and thoughtful engineering.","半导体器件、科研软件与工程实践。",l)}</p></div>{link("mailto:"+EMAIL,EMAIL+" ↗")}</section>'
     return s
 
 def research(l):
@@ -71,10 +75,13 @@ def projects(l):
     return s
 
 def project_detail(p,l):
-    s=link(url('projects',l),tx('← All projects','← 全部项目',l),'back-link')+heading(p['tag'][l],p['title'][l],p['summary'][l])
+    s=f'<div class=breadcrumbs>{link(url("",l),tx("Home","首页",l))}<span>/</span>{link(url("projects",l),tx("Projects","项目",l))}<span>/</span><span>{p["title"][l]}</span></div>'+heading(p['tag'][l],p['title'][l],p['summary'][l])
+    s+='<div class="project-detail-layout">'
     if p.get('image'):s+=f'<figure class="detail-figure {p["id"]}">{img(p["image"],p["caption"][l])}<figcaption>{p["caption"][l]}</figcaption></figure>'
     s+='<div class="reading">'+''.join(f'<section><h2>{b[1 if l else 0]}</h2><p>{b[3 if l else 2]}</p></section>' for b in p['body'])+'</div>'
+    s+='</div>'
     if p.get('links'):s+='<div class="text-links">'+''.join(link(u,t+' ↗') for t,u in p['links'])+'</div>'
+    s+=f'<section class=related-projects><h2>{tx("Explore other projects","继续了解其他项目",l)}</h2><div>'+''.join(link(url('projects/'+q['id'],l),q['title'][l]+' ↗') for q in PROJECTS if q['id']!=p['id'])+'</div></section>'
     return s
 
 def experience(l):
@@ -102,13 +109,26 @@ def cv(l):
 def shell(path,l,body,title):
     language='zh-CN' if l else 'en'
     alt=url(path,1-l)
-    nav=''.join(f'<a href="{url(p,l)}" {"aria-current=page" if (path.split("/")[0]==p) else ""}>{zh if l else en}</a>' for p,en,zh in NAV)
+    nav=''
+    for p,en,zh in NAV:
+        current='aria-current="page"' if path.split('/')[0]==p else ''
+        item=f'<a href="{url(p,l)}" {current}>{zh if l else en}</a>'
+        children=[]
+        if p=='research':children=[(url(p,l)+'#theme-'+r[0],r[2 if l else 1]) for r in RESEARCH]
+        if p=='projects':children=[(url('projects/'+r['id'],l),r['title'][l]) for r in PROJECTS]+[(url('projects',l)+'#upstream',tx('Upstream contributions','上游开源贡献',l))]
+        if p=='publications':children=[(url(p,l)+'#'+r['id'],r['short']) for r in PAPERS]
+        if children:
+            label=tx(en+' submenu',zh+'子菜单',l)
+            item=f'<div class="nav-group">{item}<button class="submenu-toggle" aria-expanded="false" aria-controls="sub-{p}" aria-label="{label}">⌄</button><div class="submenu" id="sub-{p}">'+''.join(link(u,t) for u,t in children)+'</div></div>'
+        nav+=item
     description=tx('Shurong Cao, PhD student in Electronic Engineering at CUHK. Semiconductor devices, BEOL-compatible electronics, monolithic 3D integration, and open-source engineering.','曹书嵘，香港中文大学电子工程博士研究生。探索半导体器件、BEOL 兼容工艺与单片三维集成，参与工程实践和开源协作。',l)
     return f'''<!doctype html>
 <html lang="{language}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#213e59"><title>{esc(title)} | {tx('Shurong Cao','曹书嵘',l)}</title><meta name="description" content="{description}"><link rel="canonical" href="{ORIGIN+url(path,l)}"><link rel="alternate" hreflang="en" href="{ORIGIN+url(path,0)}"><link rel="alternate" hreflang="zh-Hans" href="{ORIGIN+url(path,1)}"><link rel="alternate" hreflang="x-default" href="{ORIGIN+url(path,0)}"><meta property="og:title" content="{esc(title)} | Shurong Cao"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="{ORIGIN+url(path,l)}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css?v={ASSET_VERSION}"><script src="/app.js?v={ASSET_VERSION}" defer></script></head>
 <body data-language="{language}" data-route="{path}"><a class="skip" href="#main">{tx('Skip to content','跳转到正文',l)}</a><header class="site-header"><div class="header-inner"><a class="wordmark" href="{url('',l)}">{tx('Shurong Cao','曹书嵘',l)}<span>{tx('曹书嵘','Shurong Cao',l)}</span></a><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="navigation">{tx('Menu','菜单',l)} <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="{tx('Main navigation','主导航',l)}">{nav}<a href="{url('contact',l)}" {"aria-current=page" if path=='contact' else ''}>{tx('Contact','联系',l)}</a></nav><a class="language-switch" href="{alt}" lang="{'en' if l else 'zh-CN'}" hreflang="{'en' if l else 'zh-Hans'}" aria-label="{tx('切换到中文','Switch to English',l)}">{tx('中文','EN',l)}</a></div></header><main id="main" class="container { 'home' if not path else 'inner-page'}">{body}</main><footer class="site-footer"><div class="container"><div><a class="wordmark" href="{url('',l)}">{tx('Shurong Cao','曹书嵘',l)}</a><p>{tx('Semiconductor devices · Fabrication · Integration','半导体器件 · 工艺 · 集成',l)}</p></div><div class="footer-links">{link('https://github.com/CAOShurong','GitHub ↗')}{link('mailto:'+EMAIL,tx('Email','邮件',l)+' ↗')}{link(url('contact',l),tx('Contact','联系',l))}</div><p class="copyright">© 2026 Shurong Cao · {tx('Updated September 2026','更新于 2026 年 9 月',l)}</p></div></footer></body></html>'''
 
 def build():
+    if OUT.resolve().parent != ROOT.resolve() or OUT.name != "site": raise RuntimeError("Unexpected build destination")
+    if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(exist_ok=True)
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
     for f in ['style.css','app.js','favicon.svg']:shutil.copy2(ROOT/f,OUT/f)

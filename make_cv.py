@@ -31,7 +31,7 @@ for paper in PAPERS:
 section('Selected Research & Engineering')
 for title,body in [
 ('Advanced packaging and nano-TSV modeling','Developed Python-assisted equivalent-material modeling workflows and thermo-mechanical simulations of 2.5D chip stacks using COMSOL and ANSYS at Nanjing University.'),
-('Vacuum MOSFET sensing','Worked on COMSOL model development, device architecture refinement, simulation verification, and model integration in a national-level undergraduate innovation project.'),
+('Vacuum MOSFET sensing','Worked on COMSOL model development, device architecture refinement, simulation verification, and model integration in a national-level undergraduate innovation project. Co-inventor of granted Chinese patent CN120352074B (2025).'),
 ('Summer research at HKUST(GZ), 2025','Modeled optical neuromemristors and nano-antennas, explored geometry optimization, and participated in device-characterization work.'),
 ('FPGA robotic system','Integrated PYNQ-Z2, Raspberry Pi 5, and STM32 hardware, with electronic-module assembly, wireless motion control, radar-based SLAM, and IMU drift compensation.')]:p(f'<b>{title}.</b> {body}')
 section('Open-Source Engineering')

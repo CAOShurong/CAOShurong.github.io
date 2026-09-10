@@ -13,6 +13,25 @@
       toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); toggle.focus();
     }
   });
+  document.querySelectorAll('.submenu-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') !== 'true';
+      document.querySelectorAll('.nav-group').forEach(group => {
+        group.classList.remove('is-open'); group.querySelector('button').setAttribute('aria-expanded','false');
+      });
+      button.setAttribute('aria-expanded',String(open)); button.parentElement.classList.toggle('is-open',open);
+    });
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.nav-group')) document.querySelectorAll('.nav-group').forEach(group => {
+      group.classList.remove('is-open'); group.querySelector('button').setAttribute('aria-expanded','false');
+    });
+  });
+  document.addEventListener('keydown', event => {
+    if(event.key === 'Escape') document.querySelectorAll('.nav-group.is-open').forEach(group => {
+      group.classList.remove('is-open'); const button=group.querySelector('button'); button.setAttribute('aria-expanded','false'); button.focus();
+    });
+  });
   const language = document.querySelector('.language-switch');
   language?.addEventListener('click', event => {
     try {

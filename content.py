@@ -23,7 +23,7 @@ RESEARCH = [
 PAPERS = [
  dict(id='falco-wafer',short='FALCO-WAFER',title='FALCO-WAFER: Feature-Aware Lightweight Contextual Detector for Wafer Defect Detection',
  authors='Haotian Zhang*, <strong>Shurong Cao*</strong>, Ningmu Zou',venue='IEEE International Test Conference in Asia (ITC-Asia), pp. 43–47, 2025.',
- role=('Co-first author','共同第一作者'),note=('* Equal contribution.','* 同等贡献。'),image='falco-architecture.webp',alt=('FALCO-WAFER architecture, showing the backbone, encoder, and decoder','FALCO-WAFER 网络结构：主干、特征融合与检测头'),
+ role=('Co-first author','共同第一作者'),note=('* Equal contribution.','* 同等贡献。'),image='falco-architecture.webp',alt=('FALCO-WAFER architecture, showing the backbone, encoder, and decoder','FALCO-WAFER 网络结构：主干、编码器与解码器'),
  summary=('A lightweight, feature-aware detector for semiconductor wafer inspection. Evaluated on 5,723 labeled defect images: 90.7% AP@0.5, 7.19% false-negative rate, and 13.3M parameters.','面向半导体晶圆检测的轻量化特征感知模型。在 5,723 张标注缺陷图像上，达到 90.7% AP@0.5、7.19% 漏检率，参数量为 13.3M。'),
  abstract=('The architecture combines a Multi-Scale Depthwise Block for efficient texture encoding with a Token-Energy Diagonal Attention head for feature refinement. The work addresses subtle, low-contrast wafer defects while keeping the model compact for manufacturing inspection. My research work included data preparation, model benchmarking, architecture improvement, and scientific writing.','模型结合用于高效纹理编码的多尺度深度卷积模块与用于特征优化的 Token-Energy Diagonal Attention 检测头，在保持紧凑模型的同时，针对晶圆上细微、低对比度缺陷开展检测研究。我的工作涉及数据准备、模型基准测试、结构改进和论文写作。'),
  links=[('DOI / IEEE','https://doi.org/10.1109/ITC-Asia67627.2025.00016'),('Code','https://github.com/MrJoker06/FALCO-WAFER')],
