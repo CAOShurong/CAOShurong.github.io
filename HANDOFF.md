@@ -1,34 +1,39 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 3
-updated_at: "2026-09-11T01:24:46+08:00"
+handoff_revision: 4
+updated_at: "2026-09-11T01:31:16+08:00"
 updated_by: Codex
-base_revision: git:d7f05711fbbff40bc535252d5e81a0c2d8ad368e
-workspace_fingerprint: sha256:24992eb4902394c28c2026c5750b590eedb4fb2af3fbfd13715a083c87067575
+base_revision: git:472e9f95f2925d93abe971fdbded9f2d1a0bd4e2
+workspace_fingerprint: sha256:3fb911e5f1acd3d67e8e01e7d9e60c1b5650de0dbab8fc4fbd10bf3e70be59b1
 context_fingerprint: sha256:520681b76180f3052f27ea15f50122ca3bd76b5c1af42799f15e3ad133948cdb
-status: active
+status: complete
 ---
 # Project Handoff
 ## Current objective
-Publish the finished bilingual academic website and verify the live user journey.
+Published bilingual academic website ready for the owner's review at https://caoshurong.github.io/.
 ## Confirmed state
 ### Completed
-22 EN/ZH routes, selected real imagery, public one-page CV, responsive navigation, citations and figure preview. Local browser acceptance in QA.md. Privacy and static checks pass.
+- Full EN/ZH site: 22 routes, research, papers, projects and details, experience, contact and public CV.
+- Visual revision after owner rejected first pass: exact new portrait, official NJU/CUHK crests, no generic stack graphic, publication main column and academic/open-source sidebar.
+- Research/publications/projects dropdowns, mobile navigation, breadcrumbs, related projects, figure modal, BibTeX copy and PDF download.
+- GitHub Pages deployment 472e9f95f2925d93abe971fdbded9f2d1a0bd4e2, Actions run 34508157181 successful. Site payload only site/.
+- Local 320px and live 390px route audits; actual desktop/mobile screenshots and main interactions inspected. See QA.md.
+- Public Gmail only; institutional email masked. One-page PDF checked from the actual live URL. Original personal documents untouched.
 ### In progress
-Visual revision after user feedback, then live validation of the updated deployment.
+None in the implementation. Owner's subjective visual approval is still pending; do not claim they endorsed this design.
 ### Blocked
 None.
 ## Changed artifacts
-Source: build.py, content.py, style.css, app.js, make_cv.py. Public binaries: ARTIFACTS.md. Deployment: .github/workflows/pages.yml, uploads only site/.
+build.py, content.py, style.css, app.js, make_cv.py; assets/ manifest in ARTIFACTS.md. QA.md records acceptance. Source repository: https://github.com/CAOShurong/CAOShurong.github.io.
 ## Verification evidence
-See QA.md for observed local browser checks. `python build.py` and `python scripts/check_site.py`: PASS, exit 0, September 11 working tree. Full-agent capability.
+Full-agent capability. `python build.py`, `python scripts/check_site.py`, `node --check app.js`: PASS, exit 0. GitHub Actions and real published browser checks: PASS on September 11, deployed revision above. Live public PDF: one page, patent present, privacy PASS. Detailed observations in QA.md.
 ## Decisions referenced
 D-20260911-004500-pages; D-20260911-004501-content; D-20260911-030000-patent; D-20260911-013000-stylev2.
 ## Risks and unknowns
-First deployment succeeded, but user rejected its visual finish. Revised visual design verified locally; revised live deployment pending. External email client sending and physical printing not run.
+External mail delivery and physical printing not run. User may request further aesthetic refinement; preserve the current factual content and privacy constraints. GitHub contribution figures are a dated September 11 snapshot, not a live counter.
 ## Next actions
-1. Push the reviewed visual revision to the existing public CAOShurong.github.io repository.
-2. Observe successful deployment; test actual website desktop/mobile, PDF and bilingual interactions.
-3. Update this handoff and QA.md after live verification.
+1. Incorporate the owner's visual review if provided; current implementation is deployed and functioning.
+2. Edit content.py and build.py, regenerate CV only when relevant, build/check, inspect real desktop/mobile UI, then push main for Pages deployment.
+3. Refresh this handoff and artifact hashes after material changes. Never publish private source CV/PPT or unmasked university contact details.
 ## User decisions required
-None. Implementation and publication already authorized.
+No deployment or credentials decision is pending. Visual acceptance remains the owner's judgment.

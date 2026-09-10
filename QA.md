@@ -15,7 +15,16 @@ Date: 11 September 2026. Capability: full agent, with actual in-app browser inte
 - NOT_RUN: sending email and physical printing; neither is required to browse or contact via the displayed address.
 
 ## Published acceptance
-Pending deployment and live browser verification.
+PASS: https://caoshurong.github.io/ deployed from 472e9f95f2925d93abe971fdbded9f2d1a0bd4e2.
+GitHub Actions run 34508157181: build and deploy succeeded.
+- All 22 published language routes visited through the real browser at 390px; no horizontal overflow, one h1 each, no failed loaded images.
+- Desktop homepage visually inspected with the new supplied portrait, both university crests, revised columns and three submenu controls.
+- Live mobile Menu > Publications submenu > FALCO-WAFER navigation worked. Figure modal opened and closed; BibTeX copy showed the Chinese success message.
+- EN/ZH switch preserved the publication anchor. Chinese preference persisted on reopening root and reloading; switched back to English after testing.
+- Live public CV download event observed, PDF opened and personally viewed in browser. Downloaded live PDF parsed as one page with updated patent and no private phone/full institutional email.
+- Contact DOM verified only Gmail mailto targets and the literal masked institutional address.
+- External links returned successful HTTP responses except Google Patents' automated request (503); actual browser opened CN120352074B correctly with inventor and grant data. IEEE DOI resolved to the correct publisher page in earlier real-click verification.
+- No mail was sent and no physical printing was attempted.
 
 ## Visual revision after user feedback
 - Replaced portrait with exact newly supplied image; removed old portrait and generic layered illustration from current deployment assets.
