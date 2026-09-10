@@ -9,7 +9,7 @@
     nav.classList.toggle('is-open', open);
   });
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+    if (event.key === 'Escape' && !document.querySelector('.nav-group.is-open') && toggle?.getAttribute('aria-expanded') === 'true') {
       toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); toggle.focus();
     }
   });
