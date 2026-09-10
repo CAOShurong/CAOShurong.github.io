@@ -37,3 +37,13 @@ GitHub Actions run 34508157181: build and deploy succeeded.
 
 ## Prominent GitHub profile entry
 PASS on September 11: new bilingual hero button and primary navigation link. Desktop 900px and mobile 390px visually inspected; no horizontal overflow. Live website button clicked and reached https://github.com/CAOShurong (correct profile title). Deployment run 34508955205, source 8697688.
+
+## Purple visual revision — 11 September 2026
+Current working-tree checks (previous sections are historical):
+- PASS: build.py, scripts/check_site.py (23 HTML documents), node --check app.js.
+- PASS: real browser visited all 22 EN/ZH routes at 320px, no horizontal overflow, one h1, no failed loaded images.
+- Visually inspected desktop homepage papers, research/practice/exchange sections, research detail; mobile Chinese research and figure dialog. Complete figures fit without cropping. Official exchange wordmarks/crests legible.
+- PASS: mobile menu > Research submenu > p-type theme. EN switch preserves theme-02. Removed additive anchor scroll margin; intrinsic image sizes reserve layout space.
+- PASS: research and FALCO figure dialogs open/close, home BibTeX copy reports Copied. New public CV parsed as one page, no private university address or explicit author-role emphasis.
+- Research detail now explains process constraints and integration questions beyond homepage summaries. Third-party figures have DOI and linked license attribution; own papers use architecture/benchmark figures.
+- Pending at this checkpoint: deployment and fresh live acceptance.

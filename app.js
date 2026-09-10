@@ -57,7 +57,7 @@
       status.textContent=zh?'已选中，请复制文本或下载 .bib。':'Text selected. Copy it or download the .bib file.';
     }
   }));
-  document.querySelectorAll('.paper-figure[href^="/assets/"]').forEach(link => link.addEventListener('click', event => {
+  document.querySelectorAll('.paper-figure[href^="/assets/"], .figure-link[href^="/assets/"]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
     const dialog = document.createElement('dialog');
     dialog.className = 'figure-dialog';

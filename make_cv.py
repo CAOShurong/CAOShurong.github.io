@@ -27,7 +27,7 @@ section('Publications')
 for paper in PAPERS:
     authors=paper['authors'].replace('<strong>','<b>').replace('</strong>','</b>')
     detail='DOI: 10.1109/ITC-Asia67627.2025.00016' if paper['id']=='falco-wafer' else 'arXiv:2409.06367; also included in the CVM 2026 conference program.'
-    p(f'<b>{paper["title"]}</b><br/>{authors}<br/>{paper["venue"]}<br/><b>{paper["role"][0]}</b>. {detail}','SmallCopy')
+    p(f'<b>{paper["title"]}</b><br/>{authors}<br/>{paper["venue"]}<br/>{detail}','SmallCopy')
 section('Selected Research & Engineering')
 for title,body in [
 ('Advanced packaging and nano-TSV modeling','Developed Python-assisted equivalent-material modeling workflows and thermo-mechanical simulations of 2.5D chip stacks using COMSOL and ANSYS at Nanjing University.'),
