@@ -1,15 +1,15 @@
 ---
 schema_version: portable-project-memory/v1
 project_name: CAO Shurong academic website
-updated_at: "2026-09-11T00:45:00+08:00"
+updated_at: "2026-09-11T10:01:01+08:00"
 ---
 # Project Context
 ## Objective
 Complete bilingual academic website at https://caoshurong.github.io, authorized by user on 2026-09-11 (Just do it, 开始吧). High-quality, real browser verification required before completion. User reviews in morning; do not artificially delay or claim unverified completion.
 ## Deliverables
-English default, full Chinese equivalent, corresponding route switching and remembered language. Home, research, publications, project details, education/experience, public CV and contact. Actual paper figures and selected project visuals. Latest user supplied gray-jacket portrait; official NJU/CUHK crests and HKUST (Guangzhou)/Cambridge exchange logos, without exchange dates; no generic vertical-integration hero. Interactive research explorer, full-width publication spreads, varied project composition, education and exchange section and explicit dropdown navigation. NJU undergraduate to CUHK PhD progression. Maintainer and upstream contributor identity. Public-safe downloadable CV. Real local and live browser acceptance. Portable project handoff.
+English default, full Chinese equivalent, corresponding route switching and remembered language. Home, research, publications, project details, education/experience, public CV and contact. Actual paper figures and selected project visuals. Latest user supplied gray-jacket portrait; official NJU/CUHK crests and HKUST (Guangzhou)/Cambridge exchange logos, without exchange dates; no generic vertical-integration hero. Three simultaneously illustrated research directions, large publication figures, full-width engineering project grid, education/exchange side rail and explicit dropdown navigation. NJU undergraduate to CUHK PhD progression. Maintainer and upstream contributor identity. Public-safe downloadable CV. Real local and live browser acceptance. Portable project handoff.
 ## Scope and non-goals
-Version 2 is a complete redesign: deep-purple cinematic semiconductor hero, large serif typography, bright editorial research/paper sections, interactive direction selection, offset project images and purposeful motion. Version 1 is retained as tag v1.0.0 and branch archive/v1.0. No invented reference portraits/papers/dates. No unrelated visual gimmicks, irrelevant badges, empty controls or fake metrics. No paid service. Original documents untouched. Do not modify other repos.
+Version 3 is a compact identity-first academic redesign informed by actual researcher websites: real portrait, PhD identity, research summary and contact actions within the first viewport; light purple palette, readable serif headings, scientific figures, publications beside an academic side rail, and modest purposeful motion. Versions 1 and 2 are retained as tags v1.0.0/v2.0.0 and branches archive/v1.0/archive/v2.0. No invented reference portraits/papers/dates. No unrelated visual gimmicks, irrelevant badges, empty controls or fake metrics. No paid service. Original documents untouched. Do not modify other repos.
 ## Project map
 build.py/content.py generate site/. assets/ holds selected public images/PDF. scripts/ validation. Root Markdown holds project handoff. Raw personal source documents stay outside repository.
 ## Commands and verification

@@ -19,3 +19,35 @@ Version 1 is preserved at Git tag `v1.0.0` and branch `archive/v1.0`, both based
 Built-in image_gen. Saved website asset: `assets/hero-frontier.webp`.
 
 Prompt: Premium science-journal quality macro concept of a single thin silicon-wafer horizon, viewed at a low oblique angle, intricate rectilinear microcircuit etching, soft violet interference light and a few distant light points. Almost-black aubergine, imperial purple, platinum and restrained lavender. Place most detail on the right and lower-right; keep the left dark for typography. Scientific curiosity and frontier exploration. No text, logos, people, literal planets, spaceships, rainbow colors, HUDs, floating cubes or cyberpunk. Decorative conceptual art, not a claimed device measurement.
+
+
+# Version 3: identity-first academic homepage
+
+The owner rejected V2's full-viewport artwork because visitors had to scroll to meet the researcher, and the result resembled a product presentation. V1 and V2 remain rollback references, not approved designs. V3 puts the real portrait, name, CUHK PhD identity, advisor, research summary, GitHub, CV and Gmail together in the initial viewport.
+
+## Researcher references actually inspected
+
+The live pages below were opened and visually reviewed on 11 September 2026. They informed hierarchy and reading rhythm; no code, text, personal assets or research images were copied.
+
+- https://keunhong.com/ — portrait beside a concise personal introduction; restrained serif headings and direct academic links; visual highlights follow immediately.
+- https://www.vincentsitzmann.com/ — compact academic identity and contact links; highlighted work uses real imagery and citations rather than a decorative landing page.
+- https://www.matthewtancik.com/ — distinctive name typography and authentic research imagery create visual interest inside a compact publication list.
+- https://web.stanford.edu/~gordonwz/ — clear identity and contact information. Its older table-based appearance was not the visual model.
+
+## Implemented composition
+
+- A pale paper background, plum text and restrained purple accents, Newsreader headings and Inter body text. Chinese uses a locally hosted Noto Serif SC heading subset.
+- A compact portrait-and-bio opening with a direct purple GitHub Profile button. At 320px, the name, photo, PhD role and all contact actions remain within the initial 800px viewport; Gmail ends at approximately 543px in the observed local render.
+- Three current research directions are simultaneously illustrated and titled. Complete literature figures retain source and linked license attribution. No p-type figure modification or cropping.
+- Authored papers have large mechanism/benchmark figures, citations, abstracts and expandable BibTeX. Explicit author-position labels remain omitted.
+- Education and exchange form a side rail beside publications. Engineering projects then regain the full content width; the side rail does not leave a blank column throughout the rest of the page.
+- The supplied portrait, all four institution marks, exchange wording without dates, patent, project detail pages, public CV, Gmail and masked institutional email are retained.
+- Short entrance and scroll-reveal transitions, hover responses and reading progress support browsing. Pause persists across reload and reduced-motion is respected. Removed the unused V2 research-switcher code; all directions are now visible without interaction.
+
+## Version preservation
+
+- V1: annotated tag `v1.0.0`, branch `archive/v1.0`, source `f110c82ff5e0ee36a68f6a764c624c4775dfb14e` (deployed payload `92c28aa`).
+- V2: annotated tag `v2.0.0`, branch `archive/v2.0`, source `48b161c29a5025a0bc285901d335b9b91e7fcdc8` (deployed payload `0747236`). Both were pushed before V3 work.
+- V3 is implemented on `redesign/v3`. Restore older versions through a new normal commit; never delete or rewrite version history.
+
+The earlier V2 design and generation prompt above are intentionally preserved.

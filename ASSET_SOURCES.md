@@ -30,3 +30,8 @@ All three are complete, unmodified figures, displayed with author/journal, figur
 ## Version 2 art and typography
 - `hero-frontier.webp`: original built-in image generation for this website. Decorative artistic semiconductor-wafer horizon, not measurement imagery or the owner's device result. Full concept and design rationale in DESIGN_NOTES.md. Original output retained outside the repo; optimized WebP used on site. All paper figures remain unchanged.
 - `assets/fonts/`: self-hosted Inter and Instrument Serif from Google Fonts, and a Noto Serif SC subset for the Chinese headings present in the site. OFL licenses included as OFL-inter.txt, OFL-instrumentserif.txt and OFL-notoserifsc.txt. Sources: https://fonts.google.com/specimen/Inter , https://fonts.google.com/specimen/Instrument+Serif , https://fonts.google.com/noto/specimen/Noto+Serif+SC . Local files prevent runtime requests to Google. Extend the Chinese font subset if adding uncovered Chinese headings.
+
+
+## Version 3 typography
+- `assets/fonts/newsreader-0.woff2` and `newsreader.css`: Newsreader, locally hosted Latin font from https://fonts.google.com/specimen/Newsreader . SIL Open Font License in `OFL-newsreader.txt`, downloaded from https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt . Replaces Instrument Serif in the active design; old font and hero assets are retained.
+- Noto Serif SC regenerated for the 119 Chinese characters in current h1/h2 content, including the bilingual name. Font source and OFL unchanged. Versioned CSS/font URLs avoid stale V2 subsets after deployment.

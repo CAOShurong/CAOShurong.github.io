@@ -65,3 +65,16 @@ Current working-tree checks (previous sections are historical):
 - PASS: live research button > p-type panel > full figure dialog > close > English switch; panel and section anchor preserved. Live motion paused, remained paused after reload with visible heading, then resumed.
 - PASS: live mobile Projects submenu > FPGA detail page. Public CV download event observed; PDF opened and visually inspected at live URL, one page with new purple palette and nonduplicate Texture-AD venue. Local PDF privacy/author-role scan PASS.
 - All checks are functional/visual observations, not the owner's aesthetic approval. V1 rollback references retained.
+
+
+## Version 3 — local acceptance, 11 September 2026
+- PASS: `python build.py`, `python scripts/check_site.py` (23 HTML documents, resources/anchors, bilingual counterparts, contact privacy), `node --check app.js`.
+- Real browser inspected researcher reference sites listed in DESIGN_NOTES.md.
+- Personally inspected EN/ZH desktop homepage at 1440px; EN/ZH mobile first viewport at 390px and English 320px. Portrait, identity, research summary and contacts all visible initially. Local 320px Gmail bottom approximately 543px.
+- Fixed reverse-white institutional marks by restoring their dark plum field; personally saw CUHK/NJU crests and HKUST(GZ)/Cambridge wordmarks.
+- Expanded home paper visuals from small side thumbnails to full main-column figures. Personally viewed FALCO mechanism dialog and clipboard copy result `Copied`.
+- PASS: 22 real browser route visits at 320px, edition 3.0, one h1, no horizontal overflow and no failed loaded images. Later home-only layout refinements require final live recheck.
+- PASS: mobile Menu > Projects submenu > BenchLineage detail; corresponding Chinese route; desktop Research submenu > p-type detail > full figure modal. EN/ZH switch preserves publication anchor.
+- PASS: public CV download event; motion pause state observed, persisted through reload, then resumed.
+- No changes to the public PDF or paper/portrait/research image files. No original private documents edited.
+- Publication and live browser checks follow below. Subjective owner approval is not inferred from technical checks.

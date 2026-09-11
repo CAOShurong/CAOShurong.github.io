@@ -89,30 +89,6 @@
     const paused = !document.body.classList.contains('motion-paused'); setPaused(paused);
     try { localStorage.setItem('academic-motion-paused', String(paused)); } catch (_) {}
   });
-  const explorer = document.querySelector('[data-research-explorer]');
-  if (explorer) {
-    const buttons = [...explorer.querySelectorAll('[data-research]')];
-    const panels = [...explorer.querySelectorAll('.research-panel')];
-    const show = index => {
-      buttons.forEach((button, i) => button.setAttribute('aria-expanded', String(i === index)));
-      panels.forEach((panel, i) => panel.hidden = i !== index);
-      try { sessionStorage.setItem("academic-direction", String(index)); } catch (_) {}
-    };
-    buttons.forEach((button, i) => {
-      button.addEventListener('click', () => show(i));
-      button.addEventListener('keydown', event => {
-        let next;
-        if (['ArrowRight', 'ArrowDown'].includes(event.key)) next = (i + 1) % buttons.length;
-        else if (['ArrowLeft', 'ArrowUp'].includes(event.key)) next = (i + buttons.length - 1) % buttons.length;
-        else if (event.key === 'Home') next = 0;
-        else if (event.key === 'End') next = buttons.length - 1;
-        if (next !== undefined) { event.preventDefault(); show(next); buttons[next].focus(); }
-      });
-    });
-    let initial = 0;
-    try { const saved = Number(sessionStorage.getItem("academic-direction")); if (Number.isInteger(saved) && saved >= 0 && saved < buttons.length) initial = saved; } catch (_) {}
-    show(initial);
-  }
   if ('IntersectionObserver' in window && !reduced.matches) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }

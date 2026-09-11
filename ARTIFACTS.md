@@ -15,8 +15,8 @@ Public site assets. Private source CV and presentations excluded.
 | A9 | assets/fonts/instrument-serif.css | 2026-09-11 | 764 | 2879948aee8248c9fd060d66135fce9f208c75ba6697e409450dcf161631f92f | VERIFIED | ASSET_SOURCES.md |
 | A10 | assets/fonts/inter-web-0.woff2 | 2026-09-11 | 48256 | 3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62 | VERIFIED | ASSET_SOURCES.md |
 | A11 | assets/fonts/inter.css | 2026-09-11 | 1442 | 71d5221b6110ac49ccbb52526dc8d8d0fb17deaee3700233f360793f201311b0 | VERIFIED | ASSET_SOURCES.md |
-| A12 | assets/fonts/noto-serif-sc.css | 2026-09-11 | 184 | b2339c37bd16833437331ca126358136cf43c6b31fb64f0a5ea9f365eea2c97b | VERIFIED | ASSET_SOURCES.md |
-| A13 | assets/fonts/noto-serif-sc.woff2 | 2026-09-11 | 63016 | 1f8904cd6490c7628c828f9cc6ec2b71bf648cb1d0b9148bc9b27e699e964662 | VERIFIED | ASSET_SOURCES.md |
+| A12 | assets/fonts/noto-serif-sc.css | 2026-09-11 | 188 | 0178ff6535131e598247a825c041ca370e6d9483ab961ae44b1c3172a37a0b75 | VERIFIED | ASSET_SOURCES.md |
+| A13 | assets/fonts/noto-serif-sc.woff2 | 2026-09-11 | 42076 | 4d583246159c9efd18f988dedcd1a3a7ebeceaf103d726ede857d0fc1cac010a | VERIFIED | ASSET_SOURCES.md |
 | A14 | assets/fonts/OFL-instrumentserif.txt | 2026-09-11 | 4498 | 918aca23eab7bf6b4bec8b3155432bdfc17985d2fbb2516c2629785bd1feff42 | VERIFIED | ASSET_SOURCES.md |
 | A15 | assets/fonts/OFL-inter.txt | 2026-09-11 | 4470 | f14f2b95a38f4f20cad4d27f7710593f37534c046641be0348da7c28365f4e39 | VERIFIED | ASSET_SOURCES.md |
 | A16 | assets/fonts/OFL-notoserifsc.txt | 2026-09-11 | 4444 | 64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907 | VERIFIED | ASSET_SOURCES.md |
@@ -33,3 +33,6 @@ Public site assets. Private source CV and presentations excluded.
 | A27 | assets/texture-overview.jpg | 2026-09-11 | 1356997 | 58a86c549370ace9829aac53ca5e3e03bad3f43fcb13d7184c9640a13519e6ac | VERIFIED | ASSET_SOURCES.md |
 | A28 | assets/texture-samples.webp | 2026-09-11 | 161728 | 36753ff4d479abf6fe17fa6fbe06411fc7a37d12ae68b6cf5a07b923fd24c2e6 | VERIFIED | ASSET_SOURCES.md |
 | A29 | assets/vacuum-mechanism.jpg | 2026-09-11 | 63396 | 2acec70b3b201402a86c9d531177eb091e7ca5f82087e1c3ef4e285bd9df53dc | VERIFIED | ASSET_SOURCES.md |
+| A30 | assets/fonts/newsreader-0.woff2 | 2026-09-11 | 132000 | 6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101 | VERIFIED | ASSET_SOURCES.md |
+| A31 | assets/fonts/newsreader.css | 2026-09-11 | 732 | 51c0dbb65bcf7dd1df1ef8f9571f31c1c4d873c55b4d1ad6faa19d2b92b21227 | VERIFIED | ASSET_SOURCES.md |
+| A32 | assets/fonts/OFL-newsreader.txt | 2026-09-11 | 4394 | fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8 | VERIFIED | ASSET_SOURCES.md |
