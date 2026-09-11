@@ -1,6 +1,6 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 15
+handoff_revision: 16
 updated_at: "2026-09-11T14:22:41+08:00"
 updated_by: Codex
 base_revision: git:a3b6e998475dde9227deed9b0ef0139780266832
@@ -18,13 +18,12 @@ V3.3 direct-link refinement is published on both existing public hosts. The owne
 - Preserved Allura CAOShurong signature, pale GitHub feature, compact academic layout, real imagery and all factual/privacy constraints.
 - Public mirror https://caoshurong.caoshurongg.chatgpt.site/: source 4e2d6e055ebff3159a905992312d7aaabeb2618e; Sites version 2 and successful deployment appgdep_6aa39c6bc284819183d674f0ceb48f8d. Full IDs in QA.md. Exact project remains appgprj_6aa3766f6b8481919bde2fee13651b01 with static out/. Source credentials not persisted.
 - GitHub Profile ../caoshurong remains f29637c with its prominent homepage banner and account website. No profile changes this revision.
-- V1/V2/V3/V3.1/V3.2 remain remotely retained. V3.2=v3.2.0/archive/v3.2 at 3ea4904. Restore through ordinary commits, never history rewriting.
+- V1/V2/V3/V3.1/V3.2 remain remotely retained. V3.2=v3.2.0/archive/v3.2 at 3ea4904; V3.3=v3.3.0/archive/v3.3 at 399865a. Restore through ordinary commits, never history rewriting.
 ### Design exploration
 - DESIGN_NOTES.md proposes near-white surfaces/dark-purple hierarchy; chapter/question-led research, year/figure/result-led papers, and contribution-led project cases. No replacement palette/layout selected or published.
 - Ignored work/make_design_exploration.py generated an English comparison at E:/Codex/Workspaces/Dated/2026-09-11/fancy-github/outputs/design-exploration/preview.html. It remains unverified and separate from site/. The browser rejected the file URL and prohibited workaround access. Do not serve or open it indirectly to circumvent that rejection.
 ### Blocked
 No blocker for the published link scope. Fresh responsive verification was unavailable: viewport set returned success while actual width remained 3432px; overrides reset. Do not claim current mobile acceptance based on historical V3.2 results.
-## Verification evidence
 ## Changed artifacts
 build.py, style.css, DESIGN_NOTES.md, DECISIONS.md, PROJECT_CONTEXT.md, QA.md and this handoff. Mirror README.md and generated out/ synchronized. No public images, fonts, PDFs, profile content, or private source documents changed.
 
