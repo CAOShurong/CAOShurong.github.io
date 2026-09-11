@@ -17,9 +17,9 @@ Public site assets. Private source CV and presentations excluded.
 | A11 | assets/fonts/inter.css | 2026-09-11 | 1442 | 71d5221b6110ac49ccbb52526dc8d8d0fb17deaee3700233f360793f201311b0 | VERIFIED | ASSET_SOURCES.md |
 | A12 | assets/fonts/noto-serif-sc.css | 2026-09-11 | 184 | b2339c37bd16833437331ca126358136cf43c6b31fb64f0a5ea9f365eea2c97b | VERIFIED | ASSET_SOURCES.md |
 | A13 | assets/fonts/noto-serif-sc.woff2 | 2026-09-11 | 63016 | 1f8904cd6490c7628c828f9cc6ec2b71bf648cb1d0b9148bc9b27e699e964662 | VERIFIED | ASSET_SOURCES.md |
-| A14 | assets/fonts/OFL-instrumentserif.txt | 2026-09-11 | 4405 | 129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521 | VERIFIED | ASSET_SOURCES.md |
-| A15 | assets/fonts/OFL-inter.txt | 2026-09-11 | 4377 | 5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57 | VERIFIED | ASSET_SOURCES.md |
-| A16 | assets/fonts/OFL-notoserifsc.txt | 2026-09-11 | 4350 | 5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6 | VERIFIED | ASSET_SOURCES.md |
+| A14 | assets/fonts/OFL-instrumentserif.txt | 2026-09-11 | 4498 | 918aca23eab7bf6b4bec8b3155432bdfc17985d2fbb2516c2629785bd1feff42 | VERIFIED | ASSET_SOURCES.md |
+| A15 | assets/fonts/OFL-inter.txt | 2026-09-11 | 4470 | f14f2b95a38f4f20cad4d27f7710593f37534c046641be0348da7c28365f4e39 | VERIFIED | ASSET_SOURCES.md |
+| A16 | assets/fonts/OFL-notoserifsc.txt | 2026-09-11 | 4444 | 64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907 | VERIFIED | ASSET_SOURCES.md |
 | A17 | assets/hero-frontier.webp | 2026-09-11 | 203578 | a4c87431dc4e315b5eb7b869452ccc5545a03ad18975aa01c3920aa15c6e6f66 | VERIFIED | ASSET_SOURCES.md |
 | A18 | assets/hkust-gz-logo.png | 2026-09-11 | 10955 | e2d9de125e94ca99fe5a306aa81272c6470c6dd9fe6bafaee3d637ed1d92b342 | VERIFIED | ASSET_SOURCES.md |
 | A19 | assets/nju-crest.svg | 2026-09-11 | 43174 | eebef2d9d761a79f916f8efb5ee37e67965bfa0d64b559a268e8853eed77b13a | VERIFIED | ASSET_SOURCES.md |

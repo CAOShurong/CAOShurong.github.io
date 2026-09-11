@@ -60,4 +60,8 @@ Current working-tree checks (previous sections are historical):
 - PASS: moving hero transform observed, pause control stopped it and persisted through reload while title stayed visible; resume works. Research panel click changes figure/text and selected state; selection and anchor persist across EN/ZH switch.
 - PASS: mobile Menu > Publications > FALCO-WAFER; citation expansion and clipboard success. Research figure modal opens/closes.
 - Reduced motion and no-JS readable defaults implemented; OS preference emulation and physical assistive technology NOT_RUN.
-- Pending: fresh published acceptance for V2. Prior live checks in this document apply to v1 only.
+- PASS: V2 source 0747236fb4d272393adebcb7bb61f08f29e86121; GitHub Actions run 34547058691 successful.
+- PASS: all 22 live routes at 390px report edition 2.0, one h1, no horizontal overflow or failed loaded images. Chinese desktop hero personally inspected after deployment, including actual loaded fonts and artwork.
+- PASS: live research button > p-type panel > full figure dialog > close > English switch; panel and section anchor preserved. Live motion paused, remained paused after reload with visible heading, then resumed.
+- PASS: live mobile Projects submenu > FPGA detail page. Public CV download event observed; PDF opened and visually inspected at live URL, one page with new purple palette and nonduplicate Texture-AD venue. Local PDF privacy/author-role scan PASS.
+- All checks are functional/visual observations, not the owner's aesthetic approval. V1 rollback references retained.
