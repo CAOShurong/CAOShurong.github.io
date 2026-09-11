@@ -4,7 +4,7 @@ handoff_revision: 11
 updated_at: "2026-09-11T10:55:50+08:00"
 updated_by: Codex
 base_revision: git:2dd3d6e606b1b9a7cd65c84f22ca15a06ff7c779
-workspace_fingerprint: sha256:3b02757b0f811882705a139574606bb3234252dcfa9a844f0348f72cdaabd5cd
+workspace_fingerprint: sha256:f1ac786af89d5555f80fc96777f6b2abb57bfc563111e775c222649983b24c90
 context_fingerprint: sha256:986a7f9861acabe459c2cd96903f44ca126f9792414f6d4fc87f2b5f57fcf7b8
 status: active
 ---

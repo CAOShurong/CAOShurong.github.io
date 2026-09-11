@@ -99,3 +99,5 @@ Current working-tree checks (previous sections are historical):
 - PASS: mobile menu > publications submenu > Texture-AD > full figure dialog > close; Chinese BibTeX copy reported 已复制; English switch preserved /publications/#texture-ad.
 - PASS: CV download event and Open PDF navigation. One-page public PDF personally viewed in the browser, parsed as one page with Guo Xie Birong Scholarship and RMB 10,000.
 - No changes to research figures, publication authors, portrait or private source documents. Live deployment verification follows separately. Subjective owner acceptance is not inferred.
+
+- Edge live visual follow-up found an awkward final-letter wrap in the mobile contact email. Reduced its responsive size; personally rechecked local 390px and 320px. The 320px email now occupies one 31px-high line within x18–251, with no horizontal overflow.
