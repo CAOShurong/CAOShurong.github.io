@@ -15,8 +15,8 @@ def main():
     args = parser.parse_args()
     target = args.checkout.resolve()
     manifest = json.loads((target / ".openai/hosting.json").read_text())
-    if manifest.get("static", {}).get("directory") != "public":
-        raise SystemExit("Mirror must explicitly serve public/")
+    if manifest.get("static", {}).get("directory") != "out":
+        raise SystemExit("Mirror must explicitly serve out/")
     if target == ROOT or ROOT in target.parents:
         raise SystemExit("Use a separate mirror checkout")
     origin = args.origin.rstrip("/")
@@ -25,7 +25,7 @@ def main():
     source = ROOT / "site"
     if not (source / "index.html").exists():
         raise SystemExit("Run build.py and scripts/check_site.py first")
-    public = target / "public"
+    public = target / "out"
     # Preserve unrelated files. Review stale routes explicitly on future syncs.
     shutil.copytree(source, public, dirs_exist_ok=True)
     for path in public.rglob("*"):

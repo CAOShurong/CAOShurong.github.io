@@ -14,3 +14,12 @@ Edit `content.py` and `build.py` for content, and `style.css` for appearance. Ru
 - Selected software descriptions are grounded in the respective public repositories. Project links and individual PRs let readers inspect the work.
 
 See `ASSET_SOURCES.md` for visual provenance and `AI_START_HERE.md` for agent handoff. `QA.md` records executed acceptance checks and their limits.
+
+
+## Public mirror
+
+Primary: https://caoshurong.github.io/
+
+Free public alternate: https://caoshurong.caoshurongg.chatgpt.site/
+
+The separate mirror checkout is `../academic-website-mirror`. After building and validating the primary site, run `python scripts/sync_mirror.py ../academic-website-mirror --origin https://caoshurong.caoshurongg.chatgpt.site`. Review and publish that existing Sites project; updates are explicit, not automatic. See HANDOFF.md and QA.md for the active deployment and rollback references.
