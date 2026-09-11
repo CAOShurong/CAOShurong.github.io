@@ -35,4 +35,4 @@ Public site assets. Private source CV and presentations excluded.
 | A29 | assets/vacuum-mechanism.jpg | 2026-09-11 | 63396 | 2acec70b3b201402a86c9d531177eb091e7ca5f82087e1c3ef4e285bd9df53dc | VERIFIED | ASSET_SOURCES.md |
 | A30 | assets/fonts/newsreader-0.woff2 | 2026-09-11 | 132000 | 6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101 | VERIFIED | ASSET_SOURCES.md |
 | A31 | assets/fonts/newsreader.css | 2026-09-11 | 732 | 51c0dbb65bcf7dd1df1ef8f9571f31c1c4d873c55b4d1ad6faa19d2b92b21227 | VERIFIED | ASSET_SOURCES.md |
-| A32 | assets/fonts/OFL-newsreader.txt | 2026-09-11 | 4394 | fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8 | VERIFIED | ASSET_SOURCES.md |
+| A32 | assets/fonts/OFL-newsreader.txt | 2026-09-11 | 4486 | dca5a91eaf1d4a431e74801dfa745db53856bb92ec1f982506f837a00a5a94a7 | VERIFIED | ASSET_SOURCES.md |

@@ -78,3 +78,14 @@ Current working-tree checks (previous sections are historical):
 - PASS: public CV download event; motion pause state observed, persisted through reload, then resumed.
 - No changes to the public PDF or paper/portrait/research image files. No original private documents edited.
 - Publication and live browser checks follow below. Subjective owner approval is not inferred from technical checks.
+
+
+### Version 3 — published acceptance
+- PASS: deployed source `83e33256ab9bfda4da767423559e1826688bfc6b`; GitHub Actions run `34552981770` completed successfully.
+- PASS: real browser visited all 22 live EN/ZH routes at 390px. Every page reports edition 3.0, one h1, no horizontal overflow and no failed loaded images.
+- Personally inspected live English first viewport at 390px and 1440px. Gmail bottom 549px (mobile) / 461px (desktop); portrait, name, CUHK PhD identity, advisor, research summary and GitHub/CV/email are above those positions.
+- PASS: live GitHub Profile button reached https://github.com/CAOShurong and the correct GitHub profile title.
+- PASS: live mobile Menu > Publications submenu > Texture-AD; full figure dialog visually inspected and closed; Chinese switch retained /publications/#texture-ad; Chinese citation copy reported 已复制.
+- PASS: live CV download event; Open PDF link opened the public PDF, personally viewed as a single page in browser.
+- PASS: live motion pause persisted through reload with heading opacity 1; resumed afterward. Full literature figures use object-fit: contain.
+- Publication is technically complete. The owner's subjective aesthetic assessment is still open. No mail delivery, physical printing or assistive-device claim is made.
