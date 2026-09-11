@@ -8,6 +8,14 @@
 - Responsive checks NOT_RUN this revision: viewport overrides returned success but the browser remained 3432px wide. Overrides reset. Prior V3.2 mobile evidence remains historical, not claimed as a new run.
 - Standalone design comparison is unpublished and not visually accepted. Its file URL was blocked by the browser; no workaround was attempted. This release contains links and focus/hover affordances only.
 
+### V3.3 published acceptance
+- Primary source a3b6e998475dde9227deed9b0ef0139780266832; Pages run 34569001315 succeeded.
+- Existing public mirror source 4e2d6e055ebff3159a905992312d7aaabeb2618e; saved Sites version 2, id appgprj_6aa3766f6b8481919bde2fee13651b01~appgver_9e26fc3913b48191b957e9430c7d3c48. Deployment appgdep_6aa39c6bc284819183d674f0ceb48f8d succeeded at https://caoshurong.caoshurongg.chatgpt.site. Public audience unchanged; temporary source credential cleared.
+- PASS: eight unauthenticated HTTP reads (EN/ZH home and publications on both origins) return 200, edition 3.3, and both original paper destinations.
+- Actual primary home p-type link reached /research/#theme-02; switching to Chinese retained /zh/research/#theme-02. English primary homepage visually inspected.
+- Actual mirror name link reached /cv/. Chinese mirror homepage visually inspected; its p-type intro link reached /zh/research/#theme-02 with matching Chinese content.
+- Browser read-only evaluate became inconsistent with current snapshots on the mirror; verification used semantic locators, visible AX state and normal screenshots. No fresh responsive claim is made. Site handoff requested in existing in-app tab.
+
 Date: 11 September 2026. Capability: full agent, with actual in-app browser interaction.
 
 ## Local acceptance

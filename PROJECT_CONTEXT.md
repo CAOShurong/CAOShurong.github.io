@@ -1,7 +1,7 @@
 ---
 schema_version: portable-project-memory/v1
 project_name: CAO Shurong academic website
-updated_at: "2026-09-11T10:55:50+08:00"
+updated_at: "2026-09-11T14:22:41+08:00"
 ---
 # Project Context
 ## Objective
