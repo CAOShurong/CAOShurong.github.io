@@ -38,7 +38,7 @@ section('Open-Source Engineering')
 p('<b>BenchLineage maintainer.</b> Research provenance, calibration records, uncertainty budgets, evidence bundles, and ELN archive interoperability. Related contributions were integrated into the ELN format checks and eLabFTW importer tests.')
 p('<b>Upstream contributor.</b> 37 merged pull requests across 22 external repositories, including Astropy, cibuildwheel, the ELN File Format, and GitHub MCP Server (GitHub snapshot: 11 September 2026).')
 section('Recognition & Communication')
-p('<b>National Second Prize, 2024.</b> FPGA Innovation Design Track Finals, 7th National College Embedded Chip and System Design Competition.<br/><b>People’s Scholarship, 2023 and 2024.</b> Nanjing University.<br/><b>Team leader and commencement speaker.</b> Hardware design program at St Catharine’s College, Cambridge.')
+p('<b>Guo Xie Birong Scholarship.</b> Nanjing University, RMB 10,000.<br/><b>National Second Prize, 2024.</b> FPGA Innovation Design Track Finals, 7th National College Embedded Chip and System Design Competition.<br/><b>Team leader and commencement speaker.</b> Hardware design program at St Catharine’s College, Cambridge.')
 section('Technical Background')
 p('Semiconductor-device modeling; COMSOL and ANSYS; Python, C, PyTorch, Git and Linux; Verilog, FPGA, STM32, ROS and embedded systems. Mandarin and English.')
 def footer(canvas,doc):

@@ -55,6 +55,24 @@ PROJECTS = [
 ]
 
 PRS=[('Astropy #20256','https://github.com/astropy/astropy/pull/20256','Degraded-accuracy handling for stale IERS predictions.','过期 IERS 预测值的精度降级处理。'),('cibuildwheel #2966','https://github.com/pypa/cibuildwheel/pull/2966','Respect configured NuGet package sources.','遵循用户配置的 NuGet 软件包来源。'),('ELN File Format #157','https://github.com/TheELNConsortium/TheELNFileFormat/pull/157','A web archive checker built on the shared test suite.','基于共享测试套件的网页归档检查器。'),('GitHub MCP Server #3146','https://github.com/github/github-mcp-server/pull/3146','Feature flags through URL query parameters.','通过 URL 查询参数配置功能开关。')]
+
+OPEN_SOURCE_FEATURES = [
+    dict(name='BenchLineage', url='https://github.com/CAOShurong/benchlineage', image='benchlineage-github.png',
+         role=('Maintainer · Research software','维护者 · 科研软件'),
+         alt=('BenchLineage README on GitHub, showing the measurement-to-evidence workflow','GitHub 上的 BenchLineage README，展示从测量到可验证记录的工作流程'),
+         summary=('Connecting experimental results with instruments, calibration, raw data and reproducible analysis.','将实验结果与仪器、校准记录、原始数据及可复现分析连接起来。'),
+         cta=('Explore the repository','查看项目仓库')),
+    dict(name='GitHub MCP Server', url='https://github.com/github/github-mcp-server/pull/3146', image='github-mcp-contribution.png',
+         role=('Merged contribution · #3146','已合并贡献 · #3146'),
+         alt=('GitHub MCP Server pull request 3146 by CAOShurong with its merged status','CAOShurong 提交的 GitHub MCP Server PR #3146 及其已合并状态'),
+         summary=('URL-based feature flags for hosted clients, with consistent OAuth resource discovery.','为托管客户端加入 URL 功能开关，并保持 OAuth 资源发现的一致性。'),
+         cta=('Read the contribution','查看这项贡献')),
+    dict(name='Astropy', url='https://github.com/astropy/astropy/pull/20256', image='astropy-contribution.png',
+         role=('Merged contribution · #20256','已合并贡献 · #20256'),
+         alt=('Astropy pull request 20256 by CAOShurong with its merged status','CAOShurong 提交的 Astropy PR #20256 及其已合并状态'),
+         summary=('Making stale Earth-orientation predictions respect the user’s configured accuracy policy.','让过期地球定向预测数据遵循用户配置的精度处理策略。'),
+         cta=('Read the contribution','查看这项贡献')),
+]
 # Representative literature figures for current research interests.
 RESEARCH_VISUALS = [
  dict(image='research-beol.jpg',alt=('PEALD IGZO transistor fabrication, gate stack and circuit integration','PEALD IGZO 晶体管制造流程、栅堆叠与电路集成'),caption=('PEALD IGZO: from a low-temperature process to integrated circuits.','PEALD IGZO：从低温工艺走向集成电路。'),credit='Wang et al. · Advanced Science · Fig. 1',source='https://doi.org/10.1002/advs.202510551',license='CC BY 4.0',tags=('Low thermal budget · ALD / CVD · Interfaces','低热预算 · ALD / CVD · 界面')),

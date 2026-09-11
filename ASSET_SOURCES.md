@@ -35,3 +35,13 @@ All three are complete, unmodified figures, displayed with author/journal, figur
 ## Version 3 typography
 - `assets/fonts/newsreader-0.woff2` and `newsreader.css`: Newsreader, locally hosted Latin font from https://fonts.google.com/specimen/Newsreader . SIL Open Font License in `OFL-newsreader.txt`, downloaded from https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt . Replaces Instrument Serif in the active design; old font and hero assets are retained.
 - Noto Serif SC regenerated for the 119 Chinese characters in current h1/h2 content, including the bilingual name. Font source and OFL unchanged. Versioned CSS/font URLs avoid stale V2 subsets after deployment.
+
+
+## Version 3.1 refinements
+- `benchlineage-github.png`: actual browser screenshot of https://github.com/CAOShurong/benchlineage at the README, captured 11 September 2026. Shows the owner's repository and measurement-to-evidence introduction.
+- `github-mcp-contribution.png`: actual browser screenshot of https://github.com/github/github-mcp-server/pull/3146 , captured 11 September 2026. Author CAOShurong, merged 1 September 2026. Displayed as a direct link to the original contribution.
+- `astropy-contribution.png`: actual browser screenshot of https://github.com/astropy/astropy/pull/20256 , captured 11 September 2026. Author CAOShurong, merged 23 August 2026. Displayed as a direct link to the original contribution.
+- Screenshots preserve the actual public GitHub UI and are not fabricated cards or edited claims. GitHub marks identify GitHub links, not an endorsement. The feature-panel GitHub mark follows the Octicons mark; MIT notice in `assets/github-mark-LICENSE.txt`, source https://github.com/primer/octicons .
+- The SC header mark and favicon are original code-native vector initials, sharing the same curved geometry.
+- `assets/fonts/noto-sans-sc-*.woff2`: self-hosted Noto Sans SC variable-weight subsets (400–600), 565 distinct Chinese/punctuation glyphs from all rendered pages and interactive labels. Source https://fonts.google.com/noto/specimen/Noto+Sans+SC . SIL OFL in `OFL-notosanssc.txt`. `scripts/refresh_chinese_font.py` reproduces the Google Fonts subset download; run after building changed public text, then rebuild. Noto Serif SC remains archived but is no longer loaded. Inter and Newsreader remain active.
+- Guo Xie Birong Scholarship: the owner explicitly confirmed receipt and RMB 10,000. Official Chinese spelling 郭谢碧蓉奖学金 and the RMB 10,000 award level independently checked at https://physics.nju.edu.cn/rcpy/zxtz/20240927/i297077.html . That source is a selection notice, not the owner's award record; no personal award year or faculty quota is inferred. Public CV updated consistently.

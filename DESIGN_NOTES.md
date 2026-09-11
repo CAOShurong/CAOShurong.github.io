@@ -51,3 +51,13 @@ The live pages below were opened and visually reviewed on 11 September 2026. The
 - V3 is implemented on `redesign/v3`. Restore older versions through a new normal commit; never delete or rewrite version history.
 
 The earlier V2 design and generation prompt above are intentionally preserved.
+
+
+## Version 3.1 — refinement of the accepted direction
+The owner prefers V3 to V1/V2 and asks for targeted polish. Preserve its compact identity, pale purple academic palette, real figures and overall hierarchy.
+- Replace the minor scholarship in selected recognition with Guo Xie Birong Scholarship, Nanjing University · RMB 10,000. Repeat the same fact in experience, CV pages and one-page public PDF.
+- Make the GitHub Profile a full-width plum invitation with an unmistakable handle, platform mark and direct action. Three real repository/merged-PR screenshots explain maintained research software, infrastructure contributions and scientific computing. Counts become a small secondary line.
+- Set Chinese content in locally hosted Noto Sans SC with measured 400/500/600 weights and more breathing room in paragraphs. Retain Newsreader/Inter in English; adjust emphasis and optical spacing.
+- Replace `sc.` typesetting with a drawn SC monogram and coordinated favicon. Both remain simple at navigation size.
+- Place the Gmail-first institutional-contact sentence directly under the contact email. Keep the institutional address masked and non-actionable.
+- V3 rollback also pushed before edits: annotated tag `v3.0.0` and `archive/v3.0` at `2dd3d6e`. V1/V2 references remain intact. V3.1 uses `polish/v3.1`.

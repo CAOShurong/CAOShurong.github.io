@@ -89,3 +89,13 @@ Current working-tree checks (previous sections are historical):
 - PASS: live CV download event; Open PDF link opened the public PDF, personally viewed as a single page in browser.
 - PASS: live motion pause persisted through reload with heading opacity 1; resumed afterward. Full literature figures use object-fit: contain.
 - Publication is technically complete. The owner's subjective aesthetic assessment is still open. No mail delivery, physical printing or assistive-device claim is made.
+
+
+## Version 3.1 — local acceptance, 11 September 2026
+- PASS: build.py, scripts/check_site.py (23 documents, resources, internal anchors, counterparts and public contact contract), node --check app.js, git diff --check.
+- PASS: 22 actual browser route visits at 320px; edition 3.1, exactly one h1, no horizontal overflow and no failed loaded images. Scope includes EN/ZH home, research, publications, projects, experience, contact, CV and four project details. Ignored `work/v31-local-route-checks.json` retains observations.
+- Personally inspected EN/ZH desktop GitHub feature and all three screenshot cards; Chinese mobile first viewport and open-source section; Chinese desktop school/exchange marks, scholarship and contact note. Header SC and Chinese Noto Sans SC computed font inspected.
+- PASS: actual clicks on the large GitHub feature and each of the three cards reached the correct profile/repository/PR. Both upstream destinations visibly report Merged.
+- PASS: mobile menu > publications submenu > Texture-AD > full figure dialog > close; Chinese BibTeX copy reported 已复制; English switch preserved /publications/#texture-ad.
+- PASS: CV download event and Open PDF navigation. One-page public PDF personally viewed in the browser, parsed as one page with Guo Xie Birong Scholarship and RMB 10,000.
+- No changes to research figures, publication authors, portrait or private source documents. Live deployment verification follows separately. Subjective owner acceptance is not inferred.
