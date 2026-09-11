@@ -1,5 +1,13 @@
 # Website acceptance record
 
+## V3.3 link refinement — local, 11 September 2026
+- PASS: build.py; check_site.py checks 23 HTML documents, resources/anchors, bilingual counterparts and contact privacy; git diff --check.
+- Desktop EN/ZH homepage inspected. Actual name-to-CV and English/Chinese research-keyword-to-section navigation observed. NJU and Ni Group links reached the correct official pages.
+- Actual Texture-AD title click reached arXiv 2409.06367 and the matching title. FALCO title activated the standard DOI; the browser's Zotero extension redirected IEEE to CUHK library authentication. Publisher content behind that login was not tested; no proxy settings changed.
+- Actual click at the center of the CUHK education entry reached the university homepage. Keyboard Tab from the school link focused the independently clickable supervisor link; Enter activated it. Research submenu button opened its three direction links.
+- Responsive checks NOT_RUN this revision: viewport overrides returned success but the browser remained 3432px wide. Overrides reset. Prior V3.2 mobile evidence remains historical, not claimed as a new run.
+- Standalone design comparison is unpublished and not visually accepted. Its file URL was blocked by the browser; no workaround was attempted. This release contains links and focus/hover affordances only.
+
 Date: 11 September 2026. Capability: full agent, with actual in-app browser interaction.
 
 ## Local acceptance

@@ -65,3 +65,13 @@ The owner prefers V3 to V1/V2 and asks for targeted polish. Preserve its compact
 
 ## V3.2 final polish
 Use an Allura signature in deep purple (#503269), with no adjacent duplicate name. The full signature is a homepage link in both languages. The open-source feature now uses a light lavender gradient (#f0e8f6 to #e2d2ed) with dark-purple typography. Preserve the V3.1 academic composition, evidence imagery, and existing English/Chinese type system.
+
+## V3.3 links and subpage exploration
+The owner accepts the current homepage and clarified that the monotonous second-level content means destination pages. The highlighted identity, affiliation, research terms, paper titles, education entries and exchanges now link to the corresponding biography, research sections, original papers and official institutions. Keep text colors and understated hover/focus feedback. Existing submenu arrows get a clearer background.
+
+Proposals below are not a published redesign:
+- Keep the compact homepage and purple identity. Prefer near-white pages, dark plum text, and lavender reserved for selected sections over tinting every surface. A warmer mulberry variant is worth comparing but is not selected.
+- Research: connect the three research questions through an overview and chapter navigation; alternate complete scientific figures with question-led explanations. Retain exploratory language and linked source/license attribution.
+- Publications: use a year rail, clear title/authors/venue hierarchy, large core figures and compact results strips. Keep citations expandable without adding author-position labels.
+- Project details: organize each case around its problem, personal contribution, mechanism/prototype, and documented result. Different content types should have different compositions.
+- An English comparison draft is retained outside the public payload. It has not passed visual verification: the browser disallowed its local file URL. Do not represent it as an accepted or published design.

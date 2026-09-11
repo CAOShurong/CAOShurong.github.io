@@ -1,6 +1,9 @@
 # Decision Log
 
 # Decisions
+## D-20260911-141200-v33links
+Preserve the accepted V3.2 homepage and v3.2.0/archive/v3.2 at 3ea4904. Make the highlighted identity, affiliations, research keywords, paper titles, education and exchange content clickable in both languages. Research terms retain language and exact section anchors. Paper titles lead to DOI/arXiv; figures retain the full-image viewer. The owner clarified that second-level monotony means subpages, not dropdown menus. Explore page-specific compositions and purple/white hierarchy separately from this link release. No wholesale redesign or Traditional Chinese conversion is inferred.
+
 ## D-20260911-004500-pages
 User-selected GitHub Pages takes precedence over Sites hosting/scaffold defaults. Static site/ is isolated deployment payload. Hand-off and private research files are not website routes.
 ## D-20260911-004501-content

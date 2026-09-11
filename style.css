@@ -99,3 +99,20 @@
 .opensource-home .pr-list{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
 @media(max-width:980px){.practice-home .projects-grid{grid-template-columns:1fr 1fr}.practice-home .project-visual{height:240px}}
 @media(max-width:720px){.practice-home .projects-grid,.opensource-home .pr-list{grid-template-columns:1fr}.practice-home .project-visual{height:245px}}
+
+/* Quiet but discoverable links throughout the academic introduction. */
+.quiet-link,.paper-title-link,.identity-name,.institution-link,.supervisor-link{color:inherit}
+.identity-name{display:block;width:fit-content;max-width:100%}
+.identity-name:hover{text-decoration:none}.identity-name:hover h1{color:var(--blue)}
+.prose-link{color:inherit;text-decoration:underline;text-decoration-color:#c4b2d5;text-decoration-thickness:1px;text-underline-offset:3px}
+.prose-link:hover,.quiet-link:hover,.paper-title-link:hover,.institution-link:hover,.supervisor-link:hover{color:var(--blue);text-decoration:underline}
+.education article{position:relative;isolation:isolate}
+.institution-link:after{content:"";position:absolute;inset:0;z-index:1;border-radius:5px}
+.institution-link:focus-visible:after{outline:2px solid #9974bc;outline-offset:5px}
+.education article:has(.institution-link:hover) h3{color:var(--blue)}
+.supervisor-link{position:relative;z-index:2}
+.exchange-logo{transition:box-shadow .18s,transform .18s}
+.exchange-logo:hover{box-shadow:0 0 0 2px #b69bca;transform:translateY(-1px)}
+.submenu-toggle{min-width:26px;color:var(--blue);background:#efe8f5;border-radius:4px;margin-left:3px;line-height:1.2}
+.submenu-toggle:hover,.submenu-toggle:focus-visible{background:#e2d4ee;color:#4f3068}
+@media (prefers-reduced-motion:reduce){.exchange-logo{transition:none}}
