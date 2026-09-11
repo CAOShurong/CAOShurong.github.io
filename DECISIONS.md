@@ -25,3 +25,7 @@ Supersedes the composition of D-20260911-100000-v2design. Owner rejects V2's ful
 
 ## D-20260911-120000-v31pol
 Owner requests refinement of V3, not another rebuild. Prioritize Guo Xie Birong Scholarship (RMB 10,000) over People's Scholarship, without inferring an award year. The owner's confirmation establishes receipt; NJU source verifies spelling and amount level. Add Gmail-first university contact wording. Replace counts-led homepage open source with a large GitHub Profile feature and actual BenchLineage/GitHub MCP Server/Astropy screenshots linking directly to the source. Use Noto Sans SC across Chinese content and original SC vector initials; retain English Newsreader/Inter and V3 composition. Preserve v3.0.0/archive/v3.0 as well as v1/v2.
+
+
+## D-20260911-114600-v32sign
+Owner accepts the current composition and requests a dark-purple cursive CAOShurong homepage link, removal of the adjacent duplicate header name, and a lighter large GitHub Profile panel. Use local Allura and a pale lavender panel with dark text. Add a linked banner at the very top of the GitHub Profile README and set the account website to the academic homepage. Owner explicitly confirms a free public alternate URL; mirror validated static content on the registered Sites project. Preserve v3.1.0/archive/v3.1 at 8a7d51f as well as all earlier rollback references.

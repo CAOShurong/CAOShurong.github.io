@@ -1,17 +1,16 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 12
-updated_at: "2026-09-11T11:13:45+08:00"
+handoff_revision: 13
+updated_at: "2026-09-11T11:47:00+08:00"
 updated_by: Codex
-base_revision: git:b8a9d5900f9ff6610ac02028bee069a9183f2388
-base_revision: git:b8a9d5900f9ff6610ac02028bee069a9183f2388
-workspace_fingerprint: sha256:b85b5ed635d2313f11821b344258be30c3e9756a8517f6cfc279840ae351fa81
-context_fingerprint: sha256:46e87fe23b7549b812eed504e01ed6027bea67a102bad60a3bdfca74f82d4498
-status: complete
+base_revision: git:8a7d51ff497d7ba78ff2aec7ab552103690f5899
+workspace_fingerprint: sha256:28bc3120a69d3f096a09e0c1eb8d8c83681632ed3c7976d5010503420abd3943
+context_fingerprint: sha256:e3e57273c620d3c9f77553e486e543f564ef3848bf4ee02c0e1a5fea5f1bedf3
+status: in_progress
 ---
 # Project Handoff
 ## Current objective
-V3.1 polish is published and verified at https://caoshurong.github.io/. Preserve V3's academic composition and the owner's earlier requirements. Await the owner's next assessment; do not infer aesthetic approval.
+V3.2 signature and lavender panel are locally verified; publish primary site, prominent GitHub Profile entry, and free public Sites mirror. Preserve all earlier versions.
 ## Confirmed state
 ### Completed
 - Source dc51bf0 provides the V3.1 refinement; final source b8a9d5900f9ff6610ac02028bee069a9183f2388 also fixes mobile contact-email wrapping. Pages run 34557215867 successful (prior run 34556605684 successful).
@@ -22,7 +21,7 @@ V3.1 polish is published and verified at https://caoshurong.github.io/. Preserve
 - Previous versions remotely preserved: v1.0.0 / archive/v1.0 at f110c82; v2.0.0 / archive/v2.0 at 48b161c; v3.0.0 / archive/v3.0 at 2dd3d6e. No history rewriting.
 - All previous real paper/research figures, supplied portrait, four institution marks, exchanges without dates, research exploration wording, bilingual routes, submenus and public-safe contacts retained.
 ### In progress
-None. Implementation and publication complete for this requested refinement.
+V3.2 publication and live verification, GitHub Profile banner, and public mirror.
 ### Blocked
 None. In-app screenshot capture became unavailable late in verification; Edge supplied the remaining visual checks successfully.
 ## Changed artifacts

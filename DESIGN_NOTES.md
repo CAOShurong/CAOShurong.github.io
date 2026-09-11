@@ -61,3 +61,7 @@ The owner prefers V3 to V1/V2 and asks for targeted polish. Preserve its compact
 - Replace `sc.` typesetting with a drawn SC monogram and coordinated favicon. Both remain simple at navigation size.
 - Place the Gmail-first institutional-contact sentence directly under the contact email. Keep the institutional address masked and non-actionable.
 - V3 rollback also pushed before edits: annotated tag `v3.0.0` and `archive/v3.0` at `2dd3d6e`. V1/V2 references remain intact. V3.1 uses `polish/v3.1`.
+
+
+## V3.2 final polish
+Use an Allura signature in deep purple (#503269), with no adjacent duplicate name. The full signature is a homepage link in both languages. The open-source feature now uses a light lavender gradient (#f0e8f6 to #e2d2ed) with dark-purple typography. Preserve the V3.1 academic composition, evidence imagery, and existing English/Chinese type system.

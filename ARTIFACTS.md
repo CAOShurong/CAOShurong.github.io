@@ -44,3 +44,6 @@ Public site assets. Private source CV and presentations excluded.
 | A38 | assets/fonts/OFL-notosanssc.txt | 2026-09-11 | 4481 | e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15 | VERIFIED | ASSET_SOURCES.md |
 | A39 | assets/github-mark-LICENSE.txt | 2026-09-11 | 1089 | c238f05b133887803259eefea2f82586b56c2452a9d8c75ad505c5ff5cdf3bd5 | VERIFIED | ASSET_SOURCES.md |
 | A40 | assets/github-mcp-contribution.png | 2026-09-11 | 92559 | 63612ef182676f9ad913e0ff370f2b19daeb14ed42ec113209ae1f04d18eea42 | VERIFIED | ASSET_SOURCES.md |
+| A41 | assets/fonts/allura-signature.woff2 | 2026-09-11 | 4508 | feec6c1f15a1ddba81ffe7bae5686afd438b97c1fdea3dbf56ab97c682fb66b8 | VERIFIED | ASSET_SOURCES.md |
+| A42 | assets/fonts/allura.css | 2026-09-11 | 180 | c59a847b6a86881611cd73a1b2a064439f3744a4ac52f2917d817041ccb6136c | VERIFIED | ASSET_SOURCES.md |
+| A43 | assets/fonts/OFL-allura.txt | 2026-09-11 | 4478 | c8cb4c94a558b6cb82ac5dc981a73a0b8aee35a5c52c8a7832fc0280c289ad49 | VERIFIED | ASSET_SOURCES.md |
