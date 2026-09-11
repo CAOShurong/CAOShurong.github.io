@@ -72,3 +72,59 @@
     dialog.showModal();
   }));
 })();
+(() => {
+  'use strict';
+  const zh = document.documentElement.lang.startsWith('zh');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const motionButton = document.querySelector('.motion-toggle');
+  const setPaused = paused => {
+    document.body.classList.toggle('motion-paused', paused);
+    if (motionButton) {
+      motionButton.setAttribute('aria-pressed', String(paused));
+      motionButton.textContent = paused ? (zh ? '播放动效 ▷' : 'Resume motion ▷') : (zh ? '暂停动效 Ⅱ' : 'Pause motion Ⅱ');
+    }
+  };
+  try { setPaused(localStorage.getItem('academic-motion-paused') === 'true'); } catch (_) {}
+  motionButton?.addEventListener('click', () => {
+    const paused = !document.body.classList.contains('motion-paused'); setPaused(paused);
+    try { localStorage.setItem('academic-motion-paused', String(paused)); } catch (_) {}
+  });
+  const explorer = document.querySelector('[data-research-explorer]');
+  if (explorer) {
+    const buttons = [...explorer.querySelectorAll('[data-research]')];
+    const panels = [...explorer.querySelectorAll('.research-panel')];
+    const show = index => {
+      buttons.forEach((button, i) => button.setAttribute('aria-expanded', String(i === index)));
+      panels.forEach((panel, i) => panel.hidden = i !== index);
+      try { sessionStorage.setItem("academic-direction", String(index)); } catch (_) {}
+    };
+    buttons.forEach((button, i) => {
+      button.addEventListener('click', () => show(i));
+      button.addEventListener('keydown', event => {
+        let next;
+        if (['ArrowRight', 'ArrowDown'].includes(event.key)) next = (i + 1) % buttons.length;
+        else if (['ArrowLeft', 'ArrowUp'].includes(event.key)) next = (i + buttons.length - 1) % buttons.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = buttons.length - 1;
+        if (next !== undefined) { event.preventDefault(); show(next); buttons[next].focus(); }
+      });
+    });
+    let initial = 0;
+    try { const saved = Number(sessionStorage.getItem("academic-direction")); if (Number.isInteger(saved) && saved >= 0 && saved < buttons.length) initial = saved; } catch (_) {}
+    show(initial);
+  }
+  if ('IntersectionObserver' in window && !reduced.matches) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    }), {threshold:.1});
+    document.querySelectorAll('[data-reveal]').forEach(el => { el.classList.add('reveal-ready'); observer.observe(el); });
+  }
+  const progress = document.querySelector('.reading-progress');
+  let ticking = false;
+  const update = () => {
+    if (progress) progress.style.transform = `scaleX(${Math.min(1, scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight))})`;
+    ticking = false;
+  };
+  addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, {passive:true});
+  addEventListener('resize', update); update();
+})();

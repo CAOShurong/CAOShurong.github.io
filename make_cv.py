@@ -9,25 +9,25 @@ from content import EMAIL,PAPERS
 
 ROOT=Path(__file__).resolve().parent
 styles=getSampleStyleSheet()
-styles.add(ParagraphStyle(name='Name',fontName='Times-Roman',fontSize=25,leading=29,textColor=colors.HexColor('#183952'),spaceAfter=7))
-styles.add(ParagraphStyle(name='Role',fontName='Helvetica',fontSize=10,leading=15,textColor=colors.HexColor('#405568'),spaceAfter=5))
-styles.add(ParagraphStyle(name='Section',fontName='Times-Roman',fontSize=14,leading=18,textColor=colors.HexColor('#183952'),spaceBefore=11,spaceAfter=6))
-styles.add(ParagraphStyle(name='Copy',fontName='Helvetica',fontSize=9.1,leading=12.5,textColor=colors.HexColor('#283c4b'),spaceAfter=7))
+styles.add(ParagraphStyle(name='Name',fontName='Times-Roman',fontSize=25,leading=29,textColor=colors.HexColor('#29173f'),spaceAfter=7))
+styles.add(ParagraphStyle(name='Role',fontName='Helvetica',fontSize=10,leading=15,textColor=colors.HexColor('#655775'),spaceAfter=5))
+styles.add(ParagraphStyle(name='Section',fontName='Times-Roman',fontSize=14,leading=18,textColor=colors.HexColor('#29173f'),spaceBefore=11,spaceAfter=6))
+styles.add(ParagraphStyle(name='Copy',fontName='Helvetica',fontSize=9.1,leading=12.5,textColor=colors.HexColor('#382b43'),spaceAfter=7))
 styles.add(ParagraphStyle(name='SmallCopy',parent=styles['Copy'],fontSize=8.2,leading=12))
 story=[]
 def p(text,style='Copy'):story.append(Paragraph(text,styles[style]))
 def section(text):p(text,'Section')
 p('Shurong Cao','Name')
 p('PhD Student in Electronic Engineering | The Chinese University of Hong Kong','Role')
-p(f'<link href="mailto:{EMAIL}" color="#315d7d">{EMAIL}</link> &nbsp; | &nbsp; <link href="https://caoshurong.github.io" color="#315d7d">caoshurong.github.io</link> &nbsp; | &nbsp; <link href="https://github.com/CAOShurong" color="#315d7d">GitHub: CAOShurong</link>','SmallCopy')
+p(f'<link href="mailto:{EMAIL}" color="#684095">{EMAIL}</link> &nbsp; | &nbsp; <link href="https://caoshurong.github.io" color="#684095">caoshurong.github.io</link> &nbsp; | &nbsp; <link href="https://github.com/CAOShurong" color="#684095">GitHub: CAOShurong</link>','SmallCopy')
 section('Education & Research Direction')
 p('<b>The Chinese University of Hong Kong</b> — PhD in Electronic Engineering, 2026–present<br/>Supervisor: Prof. Ni Zhao. Exploring semiconductor devices and fabrication for BEOL-compatible and monolithic 3D electronics, including low-temperature processing, oxide and p-type semiconductors, and complementary integration.')
 p('<b>Nanjing University</b> — B.Eng. in Integrated Circuit and System Design, 2022–2026<br/>School of Integrated Circuits, Suzhou Campus. Undergraduate thesis: <i>Parameter Optimization of Nano-TSVs for 3D Integrated Circuits.</i>')
 section('Publications')
 for paper in PAPERS:
     authors=paper['authors'].replace('<strong>','<b>').replace('</strong>','</b>')
-    detail='DOI: 10.1109/ITC-Asia67627.2025.00016' if paper['id']=='falco-wafer' else 'arXiv:2409.06367; also included in the CVM 2026 conference program.'
-    p(f'<b>{paper["title"]}</b><br/>{authors}<br/>{paper["venue"]}<br/>{detail}','SmallCopy')
+    detail='DOI: 10.1109/ITC-Asia67627.2025.00016' if paper['id']=='falco-wafer' else ''
+    p(f'<b>{paper["title"]}</b><br/>{authors}<br/>{paper["venue"]}{'<br/>'+detail if detail else ''}','SmallCopy')
 section('Selected Research & Engineering')
 for title,body in [
 ('Advanced packaging and nano-TSV modeling','Developed Python-assisted equivalent-material modeling workflows and thermo-mechanical simulations of 2.5D chip stacks using COMSOL and ANSYS at Nanjing University.'),

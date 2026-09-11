@@ -51,3 +51,13 @@ Current working-tree checks (previous sections are historical):
 - PASS: live mobile Menu > Publications > Texture-AD, core figure opened/closed; EN switch preserved #texture-ad. Hero GitHub Profile click reached the correct CAOShurong profile. Homepage vacuum project link reached the illustrated detail page.
 - PASS: live CV download event, opened and visually viewed PDF in browser; parsed actual live response as one page with updated exchange wording and no private contacts/role emphasis. Exchange years removed from the public PDF as well.
 - Subjective owner approval remains pending. External email delivery and physical printing NOT_RUN.
+
+## Version 2 rebuild — local acceptance, 11 September 2026
+- V1 saved remotely as v1.0.0 and archive/v1.0 at f110c82; implementation uses redesign/v2 before main publication.
+- PASS: build.py, scripts/check_site.py (23 HTML documents), node --check app.js; all CSS local font/background references exist.
+- PASS: real-browser visits to all 22 routes at 320px, one h1, no horizontal overflow or failed loaded images.
+- Personally viewed 1440px home hero, portrait/about, research explorer, publication spread, offset projects and Chinese education/exchange; 390px Chinese full-width hero, research switcher and image modal. Fixed the mobile container inset and CUHK logo crop discovered in visual review.
+- PASS: moving hero transform observed, pause control stopped it and persisted through reload while title stayed visible; resume works. Research panel click changes figure/text and selected state; selection and anchor persist across EN/ZH switch.
+- PASS: mobile Menu > Publications > FALCO-WAFER; citation expansion and clipboard success. Research figure modal opens/closes.
+- Reduced motion and no-JS readable defaults implemented; OS preference emulation and physical assistive technology NOT_RUN.
+- Pending: fresh published acceptance for V2. Prior live checks in this document apply to v1 only.
