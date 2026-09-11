@@ -101,3 +101,16 @@ Current working-tree checks (previous sections are historical):
 - No changes to research figures, publication authors, portrait or private source documents. Live deployment verification follows separately. Subjective owner acceptance is not inferred.
 
 - Edge live visual follow-up found an awkward final-letter wrap in the mobile contact email. Reduced its responsive size; personally rechecked local 390px and 320px. The 320px email now occupies one 31px-high line within x18–251, with no horizontal overflow.
+
+### Version 3.1 — published acceptance
+- Main refinement source `dc51bf011169e22dc6590d9726f09ac1e0a6d487`, Pages run `34556605684`: success.
+- Final contact-wrap correction source `b8a9d5900f9ff6610ac02028bee069a9183f2388`, Pages run `34557215867`: success. Published CSS query `ebc921b175` observed after browser reload. Local/CI hash strings differ because of line endings; verify actual served rules, not cross-platform byte identity.
+- PASS: all 22 live routes at 390px visited in the actual browser, edition 3.1, one h1, no horizontal overflow or failed loaded images. This route sweep preceded the final contact-only CSS correction; that final correction was rechecked on the affected live contact page.
+- Personally inspected live English first viewport and GitHub showcase in the in-app browser. Its screenshot capture subsequently became unavailable; Edge successfully supplied further desktop and mobile visual verification.
+- PASS: Edge desktop Chinese contact page, mobile Chinese contact page, final mobile email correction (20.475px, one line / height 35.8px at 390px), and final desktop Chinese GitHub showcase visually inspected. Local 320px correction also visually passed.
+- PASS: live large GitHub Profile click reaches the correct profile. All three screenshot destinations were actually clicked during local acceptance and verified as the correct repository or merged PR; the same direct URLs are on the live page.
+- PASS: live mobile navigation > publications submenu > Texture-AD, image dialog opens/closes. Chinese citation copy reports 已复制. English switch preserves /publications/#texture-ad.
+- PASS: live motion pause persists through reload (button aria-pressed true and body class motion-paused); motion restored afterward.
+- PASS: actual live CV download event and PDF open in Edge. The PDF was visually viewed, then the live HTTP response was parsed: one page, Guo Xie Birong Scholarship, RMB 10,000, no unmasked institutional identifier or private phone.
+- Final screenshots retained in ignored `work/v31-live-open-source-en.png` and `work/v31-live-open-source-zh.png`. Both viewport overrides reset. Own preview server session 65592 stopped after verification.
+- Mail delivery, physical printing and physical assistive technology were not tested. No subjective aesthetic approval is inferred from this acceptance.

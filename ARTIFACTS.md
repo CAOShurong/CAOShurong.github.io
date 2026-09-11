@@ -41,6 +41,6 @@ Public site assets. Private source CV and presentations excluded.
 | A35 | assets/fonts/noto-sans-sc-0.woff2 | 2026-09-11 | 84260 | 5204fd4d766dd96e1b38b2b91df6034e86d3d5497f7e7c174e0c33f3c72af7f9 | VERIFIED | ASSET_SOURCES.md |
 | A36 | assets/fonts/noto-sans-sc-1.woff2 | 2026-09-11 | 65472 | fc4e0ae5cd0142479e26de039367e6eb061a05518211312995a8c9c64e376b58 | VERIFIED | ASSET_SOURCES.md |
 | A37 | assets/fonts/noto-sans-sc.css | 2026-09-11 | 4313 | 0cb6eb7de2081a4b796c77e2a81cdaca152faa31b6807511583db6fdb8427ddc | VERIFIED | ASSET_SOURCES.md |
-| A38 | assets/fonts/OFL-notosanssc.txt | 2026-09-11 | 4388 | 1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9 | VERIFIED | ASSET_SOURCES.md |
-| A39 | assets/github-mark-LICENSE.txt | 2026-09-11 | 1068 | da259c8bd0de62713ccdcf88910aebca810644f98c2c912bad814fc79ea778df | VERIFIED | ASSET_SOURCES.md |
+| A38 | assets/fonts/OFL-notosanssc.txt | 2026-09-11 | 4481 | e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15 | VERIFIED | ASSET_SOURCES.md |
+| A39 | assets/github-mark-LICENSE.txt | 2026-09-11 | 1089 | c238f05b133887803259eefea2f82586b56c2452a9d8c75ad505c5ff5cdf3bd5 | VERIFIED | ASSET_SOURCES.md |
 | A40 | assets/github-mcp-contribution.png | 2026-09-11 | 92559 | 63612ef182676f9ad913e0ff370f2b19daeb14ed42ec113209ae1f04d18eea42 | VERIFIED | ASSET_SOURCES.md |
