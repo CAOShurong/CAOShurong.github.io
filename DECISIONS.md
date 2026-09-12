@@ -42,5 +42,5 @@ Owner finds the separate arrow buttons/dropdown menus ugly and explicitly accept
 ## D-20260913-012100-credits
 Owner requests prominent official project recognition with selected strong examples and source links. Use four verified records: GitHub MCP Server v1.12.0 New Contributors, CycloneDX official directory, rclone official S3 changelog and tox official release history. Add home section plus /recognition/ and /zh/recognition/, preserving simple header. Tox release links issue4021, not a pull request; label it related issue. Do not promote unsupported star/download metrics or infer organizational endorsement.
 
-## D-20260913-023000-editorial
+## D-20260913-023000-editvis
 Owner requests additional primary-source acknowledgements, unified Contributions, no CV entry, explicit English default, and better Chinese type. Subsequent feedback rejects green and authorizes rethinking layout using design references, superseding the frozen-style constraint. See DESIGN_NOTES.md. Retain old CV route for inbound links but remove its visible navigation. Preserve prior tags and D-drive backups. New contributions include Syft5179, Plotly7959/7981, TheELNFileFormat152 and eLabFTW7267; the latter links retained integration tests rather than claiming a named homepage acknowledgement.
