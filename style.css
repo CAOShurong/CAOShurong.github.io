@@ -1,6 +1,6 @@
 @import url('/assets/fonts/allura.css');
 @import url('/assets/fonts/inter.css');
-@import url('/assets/fonts/noto-sans-sc.css?v=3.1');
+@import url('/assets/fonts/noto-sans-sc.css?v=e63a3d2ad6');
 @import url('/assets/fonts/newsreader.css');
 
 /* V3: a researcher's desk. Identity, real figures, and readable citations. */
@@ -114,3 +114,6 @@
 .exchange-logo{transition:box-shadow .18s,transform .18s}
 .exchange-logo:hover{box-shadow:0 0 0 2px #b69bca;transform:translateY(-1px)}
 @media (prefers-reduced-motion:reduce){.exchange-logo{transition:none}}
+
+/* Official project records: readable editorial cards with distinct citations. */
+.credit-intro{color:var(--muted);max-width:700px;margin-bottom:28px}.credit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.credit-card{background:linear-gradient(135deg,#fff,#faf8fc);border:1px solid #ded5e6;border-radius:10px;padding:30px;display:flex;flex-direction:column;min-width:0}.credit-card-top{display:flex;align-items:center;gap:15px;margin-bottom:17px}.credit-number{color:#927da4;font-family:Newsreader,Georgia,serif;font-size:1.65rem}.credit-card-top .eyebrow{margin:0;font-size:.65rem}.credit-card h3{font-family:Newsreader,Georgia,serif;font-size:1.65rem;margin:0 0 12px;color:var(--navy)}.credit-summary{font-size:.89rem;line-height:1.75;margin:0 0 22px}.credit-record{border-left:2px solid #aa91bf;background:#f2edf6;padding:16px 19px;margin-top:auto}.credit-record-label{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:#715b84}.credit-record blockquote{margin:8px 0;font-size:.98rem;font-weight:500;line-height:1.6;overflow-wrap:anywhere;color:#43304f}.credit-record p{font-size:.76rem;color:#6c6173;margin:8px 0 0}.credit-links{display:flex;justify-content:space-between;gap:14px;margin-top:23px;font-size:.77rem}.credit-more{margin-top:25px;text-align:right}.inner-page>.credit-grid{margin-top:36px}html[lang=zh-CN] .credit-card h3{font-family:Inter,sans-serif;font-size:1.4rem}@media(max-width:640px){.credit-grid{grid-template-columns:1fr;gap:17px}.credit-card{padding:23px}.credit-links{flex-wrap:wrap}.credit-card h3{font-size:1.5rem}}

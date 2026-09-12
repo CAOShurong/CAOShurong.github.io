@@ -6,6 +6,7 @@ import json
 import hashlib
 from content import *
 from seo import metadata
+from credits import cards as credit_cards
 
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'site'
@@ -73,18 +74,25 @@ def opensource_feature(l):
         cards+=f'<a class="contribution-card" href="{c["url"]}" data-reveal><div class="contribution-shot">{img(c["image"],c["alt"][l])}<span class="shot-action" aria-hidden="true">↗</span></div><div class="contribution-copy"><p class="eyebrow">{c["role"][l]}</p><h3>{c["name"]} <span aria-hidden="true">↗</span></h3><p>{c["summary"][l]}</p><span class="contribution-link">{c["cta"][l]} ↗</span></div></a>'
     return f'<a class="github-feature" href="https://github.com/CAOShurong"><span class="github-mark">{mark}</span><span class="github-feature-copy"><span class="eyebrow">{tx("Maintainer & upstream contributor","开源维护者与贡献者",l)}</span><strong>GitHub Profile</strong><span class="github-handle">@CAOShurong</span><span class="github-description">{tx("Building research software. Contributing to the tools behind it.","构建科研软件，也参与支撑研究的工具与基础设施。",l)}</span></span><span class="github-feature-action">{tx("Explore my GitHub","前往 GitHub 主页",l)} <b aria-hidden="true">↗</b></span></a><div class="contribution-showcase">{cards}</div><div class="evidence-footer"><span>{tx("37 merged upstream PRs across 22 external repositories · September 2026","37 个上游已合并 PR · 22 个外部仓库 · 2026 年 9 月",l)}</span>{link(url("projects",l)+"#upstream",tx("More contributions","更多开源贡献",l)+" ↗")}</div>'
 
+def official_credits(l, full=False):
+    title=tx('Open-source contributions & recognition','开源贡献与项目认可',l)
+    intro=tx('Selected contributions acknowledged in official project directories and release notes.','被项目官网贡献者名录与正式发布记录署名的代表贡献。',l)
+    top=heading(tx('Open source','开源工作',l),title,intro) if full else section(title)+f'<p class="credit-intro">{intro}</p>'
+    return top+credit_cards(l)+('' if full else f'<p class="credit-more">{link(url("recognition",l),tx("Explore the official records","浏览项目方认可记录",l)+" ↗")}</p>')
+
 def home(l):
     s=f'''<section class="identity" id="about" aria-labelledby="identity-title">
 <div class="identity-heading"><p class="eyebrow">{link(CUHK_EE,tx("Electronic Engineering · CUHK","电子工程 · 香港中文大学",l),"quiet-link")}</p><a class="identity-name" href="{url("cv",l)}"><h1 id="identity-title">{tx("Shurong Cao","曹书嵘",l)}<span>{tx("曹书嵘","Shurong Cao",l)}</span></h1></a><p class="identity-role">{link(url("research",l),tx("PhD student · Semiconductor devices & integration","博士研究生 · 半导体器件与集成",l),"quiet-link")}</p></div>
 <div class="identity-portrait">{portrait(l)}<span>{tx("Hong Kong","香港",l)} · 2026</span></div>
 <div class="identity-bio"><p>{tx("I am a PhD student in Electronic Engineering at <strong><a class='prose-link' href='https://www.cuhk.edu.hk/'>The Chinese University of Hong Kong</a></strong>, advised by <strong><a class='prose-link' href='https://www.ee.cuhk.edu.hk/~nzhao/'>Prof. Ni Zhao</a></strong>.","我是<strong><a class='prose-link' href='https://www.cuhk.edu.hk/'>香港中文大学</a></strong>电子工程博士研究生，导师为 <strong><a class='prose-link' href='https://www.ee.cuhk.edu.hk/~nzhao/'>Prof. Ni Zhao</a></strong>。目前探索半导体器件与低温工艺，关注如何在现有硅基电路之上实现新的功能。",l)}</p><p>{tx("I explore <strong><a class='prose-link' href='/research/#theme-01'>BEOL-compatible devices</a></strong>, <strong><a class='prose-link' href='/research/#theme-02'>p-type oxides</a></strong> and <strong><a class='prose-link' href='/research/#theme-03'>monolithic 3D integration</a></strong>, with an interest in low-temperature fabrication. My background at Nanjing University spans integrated circuits, device simulation, industrial vision and intelligent hardware.","当前兴趣连接 <strong><a class='prose-link' href='/zh/research/#theme-01'>BEOL 兼容器件</a></strong>、<strong><a class='prose-link' href='/zh/research/#theme-02'>p 型氧化物</a></strong>与<strong><a class='prose-link' href='/zh/research/#theme-03'>单片三维集成</a></strong>。本科就读于南京大学集成电路学院，此前的研究与实践涵盖器件仿真、工业视觉与智能硬件。",l)}</p><div class="identity-links">{link("https://github.com/CAOShurong","GitHub Profile <span>↗</span>","button")}{link(url("cv",l),tx("CV","个人简历",l)+" ↗")}{link("mailto:"+EMAIL,tx("Email me","邮件联系",l)+" ↗")}</div><a class="identity-email" href="mailto:{EMAIL}">{EMAIL}</a></div></section>
-<nav class="page-index" aria-label="{tx("On this page","本页目录",l)}"><span>{tx("On this page","本页内容",l)}</span>{link("#research-interests",tx("Research interests","研究兴趣",l))}{link("#selected-publications",tx("Publications","论文",l))}{link("#research-practice",tx("Projects","项目",l))}{link("#open-source",tx("Open source","开源",l))}{link("#academic-exchange",tx("Background","学术经历",l))}</nav>'''
+<nav class="page-index" aria-label="{tx("On this page","本页目录",l)}"><span>{tx("On this page","本页内容",l)}</span>{link("#research-interests",tx("Research interests","研究兴趣",l))}{link("#selected-publications",tx("Publications","论文",l))}{link("#research-practice",tx("Projects","项目",l))}{link("#recognition",tx("Recognition","项目认可",l))}{link("#open-source",tx("Open source","开源",l))}{link("#academic-exchange",tx("Background","学术经历",l))}</nav>'''
     s+=f'<section class="research-home section" id="research-interests">{section(tx("Research interests","研究兴趣",l),tx("Research overview","研究概述",l),url("research",l))}<p class="section-intro">{tx("I am exploring the materials, fabrication routes and device architectures that could bring new functionality above existing CMOS.","围绕材料、制造工艺与器件结构展开探索，关注在现有 CMOS 之上实现新功能的可能路径。",l)}</p>{research_grid(l)}</section>'
     s+='<div class="academic-layout"><div class="academic-main">'
     s+=f'<section class="publications-home section" id="selected-publications">{section(tx("Publications","论文",l),tx("All publications","全部论文",l),url("publications",l))}'+''.join(paper(p,l,True) for p in PAPERS)+'</section>'
     s+='</div>'
     tail=''
     tail+=f'<section class="practice-home section" id="research-practice">{section(tx("Research & engineering","研究与工程实践",l),tx("All projects","全部项目",l),url("projects",l))}<div class="projects-grid">'+''.join(project_card(p,l) for p in PROJECTS)+'</div></section>'
+    tail+=f'<section class="section official-credits" id="recognition">{official_credits(l)}</section>'
     tail+=f'<section class="opensource-home section" id="open-source">{section(tx("Open-source work","开源工作",l))}{opensource_feature(l)}</section>'
 
     s+=f'<aside class="academic-rail" id="academic-exchange"><section><h2>{tx("Education","教育背景",l)}</h2>{education(l)}</section><section><h2>{tx("Academic exchanges","学术交流",l)}</h2>{exchanges(l)}</section><section class="rail-recognition"><h2>{tx("Selected recognition","代表荣誉",l)}</h2>{''.join(f'<p><strong>{name}</strong><span>{detail}</span></p>' for name,detail in recognition(l))}{link(url("experience",l),tx("Experience & recognition","经历与荣誉",l)+" ↗")}</section><section class="rail-contact"><h2>{tx("Connect","联系",l)}</h2><p>{tx("Research conversations, engineering collaborations and open-source ideas are welcome.","欢迎交流研究问题、工程合作与开源想法。",l)}</p>{link("mailto:"+EMAIL,EMAIL+" ↗")}<p class="contact-note">{institutional_note(l)}</p><p class="masked">{MASKED}</p></section></aside></div>'
@@ -103,6 +111,7 @@ def publications(l):return heading(tx('Publications','论文',l),tx('Publication
 
 def projects(l):
     s=heading(tx('Projects & open source','项目与开源',l),tx('Research & engineering','研究与工程实践',l),tx('Selected work across devices, simulation, intelligent hardware, and software for research.','器件、仿真、智能硬件与科研软件中的代表工作。',l))
+    s+=f'<p>{link(url("recognition",l),tx("Official project acknowledgements","项目官方署名与认可",l)+" ↗")}</p>'
     s+='<div class="projects-grid">'+''.join(project_card(p,l) for p in PROJECTS)+'</div>'
     s+=f'<section class="section">{section(tx("Maintained software","维护中的软件",l))}<div class="software-list"><article><h3>{link("https://github.com/CAOShurong/termscope","TermScope ↗")}</h3><p>{tx("A terminal serial plotter for live data from Arduino, ESP32, and STM32 over UART, pipes, or SSH.","终端串口绘图工具，可通过 UART、管道或 SSH 查看 Arduino、ESP32 与 STM32 的实时数据。",l)}</p></article><article><h3>{link("https://github.com/CAOShurong/Multi-function-tracking-car-based-on-STM32",tx("STM32 multifunction robot car","STM32 多功能小车",l)+" ↗")}</h3><p>{tx("An embedded project combining line tracking, ultrasonic ranging, obstacle avoidance, Bluetooth control, and OLED output.","结合循迹、超声测距、避障、蓝牙控制与 OLED 显示的嵌入式项目。",l)}</p></article></div></section>'
     s+=f'<section class="section upstream" id="upstream">{section(tx("Contributing upstream","参与上游开源",l))}<div class="contribution-intro"><div class="stat"><strong>37</strong><span>{tx("merged upstream PRs","个上游已合并 PR",l)}</span></div><p>{tx("Accepted contributions across 22 external repositories, from scientific computing and laboratory data to software infrastructure.","贡献被 22 个外部仓库接纳，涉及科学计算、实验室数据与软件基础设施。",l)}<small>{tx("GitHub snapshot · 11 September 2026 · Excludes my own repositories.","GitHub 快照 · 2026 年 9 月 11 日 · 不含本人仓库。",l)}</small></p></div><div class="pr-list">'+''.join(f'<article>{link(p[1],p[0]+" ↗")}<p>{p[3 if l else 2]}</p></article>' for p in PRS)+'</div>'+link('https://github.com/search?q=author%3ACAOShurong+is%3Apr+is%3Amerged+-user%3ACAOShurong&type=pullrequests',tx('View the contribution record','查看贡献记录',l)+' ↗')+'</section>'
@@ -161,7 +170,7 @@ def build():
     OUT.mkdir(exist_ok=True)
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
     for f in ['style.css','app.js','favicon.svg']:shutil.copy2(ROOT/f,OUT/f)
-    routes=[('',home,('Home','首页')),('research',research,('Research','研究')),('publications',publications,('Publications','论文')),('projects',projects,('Projects','项目')),('experience',experience,('Experience','经历')),('contact',contact,('Contact','联系')),('cv',cv,('CV','简历'))]
+    routes=[('',home,('Home','首页')),('recognition',lambda l:official_credits(l,True),('Project recognition','项目认可')),('research',research,('Research','研究')),('publications',publications,('Publications','论文')),('projects',projects,('Projects','项目')),('experience',experience,('Experience','经历')),('contact',contact,('Contact','联系')),('cv',cv,('CV','简历'))]
     for p in PROJECTS:routes.append(('projects/'+p['id'],lambda l,p=p:project_detail(p,l),p['title']))
     paths=[]
     for l in [0,1]:

@@ -38,9 +38,9 @@ Public site assets. Private source CV and presentations excluded.
 | A32 | assets/fonts/OFL-newsreader.txt | 2026-09-11 | 4486 | dca5a91eaf1d4a431e74801dfa745db53856bb92ec1f982506f837a00a5a94a7 | VERIFIED | ASSET_SOURCES.md |
 | A33 | assets/astropy-contribution.png | 2026-09-11 | 95437 | 74a8be44b3bf2769c8ab80e9b9b3d5a753998d7b00ef83e6ef7e1e8075ed5a9a | VERIFIED | ASSET_SOURCES.md |
 | A34 | assets/benchlineage-github.png | 2026-09-11 | 102071 | 1d8794301b1d602b12eaf33170281521c32784e549aa4fc0828fcb0da4c6e0e1 | VERIFIED | ASSET_SOURCES.md |
-| A35 | assets/fonts/noto-sans-sc-0.woff2 | 2026-09-11 | 84260 | 5204fd4d766dd96e1b38b2b91df6034e86d3d5497f7e7c174e0c33f3c72af7f9 | VERIFIED | ASSET_SOURCES.md |
-| A36 | assets/fonts/noto-sans-sc-1.woff2 | 2026-09-11 | 65472 | fc4e0ae5cd0142479e26de039367e6eb061a05518211312995a8c9c64e376b58 | VERIFIED | ASSET_SOURCES.md |
-| A37 | assets/fonts/noto-sans-sc.css | 2026-09-11 | 4313 | 0cb6eb7de2081a4b796c77e2a81cdaca152faa31b6807511583db6fdb8427ddc | VERIFIED | ASSET_SOURCES.md |
+| A35 | assets/fonts/noto-sans-sc-0.woff2 | 2026-09-13 | 82972 | a87eb07c1c26d1ae66f4112d3fdad9e5405d0b1a1304111e74c772448063c279 | VERIFIED | ASSET_SOURCES.md |
+| A36 | assets/fonts/noto-sans-sc-1.woff2 | 2026-09-13 | 76344 | 11c52ccdb6381c5736bb1ea5c7b20a67dee5c61a23408b02df27924d2f6b4b8c | VERIFIED | ASSET_SOURCES.md |
+| A37 | assets/fonts/noto-sans-sc.css | 2026-09-13 | 4572 | e63a3d2ad69e3e9a3d2496b24d8f09e44addde7f0e7404fca5fa70c5d2e2d308 | VERIFIED | ASSET_SOURCES.md |
 | A38 | assets/fonts/OFL-notosanssc.txt | 2026-09-11 | 4481 | e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15 | VERIFIED | ASSET_SOURCES.md |
 | A39 | assets/github-mark-LICENSE.txt | 2026-09-11 | 1089 | c238f05b133887803259eefea2f82586b56c2452a9d8c75ad505c5ff5cdf3bd5 | VERIFIED | ASSET_SOURCES.md |
 | A40 | assets/github-mcp-contribution.png | 2026-09-11 | 92559 | 63612ef182676f9ad913e0ff370f2b19daeb14ed42ec113209ae1f04d18eea42 | VERIFIED | ASSET_SOURCES.md |

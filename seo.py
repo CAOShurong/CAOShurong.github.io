@@ -5,6 +5,7 @@ from html import escape
 ORIGIN = 'https://caoshurong.github.io'
 NAME = 'Shurong Cao'
 DESCRIPTIONS = {
+    'recognition': ('Official project acknowledgements of Shurong Cao (曹书嵘 / CAOShurong): GitHub MCP Server, CycloneDX, rclone and tox contributions.', '曹书嵘（Shurong Cao / CAOShurong）的开源贡献与项目官方署名：GitHub MCP Server、CycloneDX、rclone 与 tox。'),
     '': (
         'Shurong Cao (曹书嵘 / CAOShurong), PhD student in Electronic Engineering at CUHK. Academic homepage: semiconductor devices, BEOL, monolithic 3D integration, publications and open-source projects.',
         '曹书嵘（Shurong Cao / CAOShurong）的个人学术主页。香港中文大学电子工程博士研究生，探索半导体器件、BEOL 低温工艺与单片三维集成，展示论文、工程项目及开源工作。'),
@@ -45,7 +46,7 @@ def metadata(path, language, title, *, not_found=False):
                         'og:locale':'zh_CN' if language else 'en_US'}.items():
         tags.append(f'<meta property="{prop}" content="{escape(value,quote=True)}">')
     person={'@type':'Person','@id':ORIGIN+'/#person','name':NAME,
-            'alternateName':['曹书嵘','CAO Shurong','CAOShurong'],
+            'alternateName':['曹书嵘','CAO Shurong','CAOShurong','ShurongCAO'],
             'url':ORIGIN+'/', 'image':ORIGIN+'/assets/portrait-2026.jpg',
             'jobTitle':'PhD student in Electronic Engineering',
             'affiliation':{'@type':'CollegeOrUniversity','name':'The Chinese University of Hong Kong','url':'https://www.cuhk.edu.hk/'},
