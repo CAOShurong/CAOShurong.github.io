@@ -24,8 +24,40 @@ CREDITS = [
          credit=('The project’s release history names the contributor alongside the fix.', '项目版本历史在修复条目中标注贡献者账号。')),
 ]
 
-def cards(language):
-    out='<div class="credit-grid">'
-    for n,c in enumerate(CREDITS,1):
-        out+=f'''<article class="credit-card"><div class="credit-card-top"><span class="credit-number">0{n}</span><span class="eyebrow">{c['label'][language]}</span></div><h3>{c['name']}</h3><p class="credit-summary">{c['summary'][language]}</p><div class="credit-record"><span class="credit-record-label">{'Project record' if not language else '项目方记录'}</span><blockquote>{escape(c['quote'])}</blockquote><p>{c['credit'][language]}</p></div><div class="credit-links"><a href="{c['source']}">{'Official acknowledgement' if not language else '查看官方署名'} ↗</a><a href="{c['pr']}">{('Related issue' if not language else '相关问题') if c['name']=='tox' else ('Contribution' if not language else '查看贡献')} ↗</a></div></article>'''
+CREDITS.extend([
+    dict(name='Plotly.js', label=('Official changelog · two acknowledgements', '官方更新日志 · 两处致谢'),
+         quote='with thanks to @CAOShurong for the contribution!',
+         summary=('Fixed numeric color ordering in parallel-categories bundles and clarified axis spike behavior across hover modes.', '修复平行类别图中数值颜色的排序，并明确不同悬停模式下坐标轴尖峰线的行为。'),
+         source='https://github.com/plotly/plotly.js/blob/main/CHANGELOG.md', pr='https://github.com/plotly/plotly.js/pull/7959',
+         extra='https://github.com/plotly/plotly.js/pull/7981',
+         credit=('Two changelog entries credit these contributions by account name.', '两条更新记录直接署名账号，分别对应数值排序修复与文档改进。')),
+    dict(name='Syft', label=('Official release · v1.51.1', '官方发布记录 · v1.51.1'),
+         quote='detect multi-arch ingress-nginx · #5179 @CAOShurong',
+         summary=('Extended binary detection for multi-architecture ingress-nginx, improving software identification in generated SBOMs.', '扩展多架构 ingress-nginx 的二进制识别，改善软件物料清单中的组件识别。'),
+         source='https://github.com/anchore/syft/releases/tag/v1.51.1', pr='https://github.com/anchore/syft/pull/5179',
+         credit=('The release names CAOShurong beside the merged fix.', '正式发布记录在已合并的修复旁标注 CAOShurong。')),
+    dict(name='TheELNFileFormat', label=('Upstream example · BenchLineage', '上游收录示例 · BenchLineage'),
+         quote='examples/BenchLineage',
+         summary=('Contributed a reproducible BenchLineage exchange archive demonstrating the mapping from research provenance to the ELN file format.', '贡献可复现的 BenchLineage 交换档案示例，展示科研溯源信息与 ELN 文件格式之间的映射。'),
+         source='https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/BenchLineage', pr='https://github.com/TheELNConsortium/TheELNFileFormat/pull/152',
+         credit=('The official repository hosts the example and links to BenchLineage, its documentation and package.', '官方仓库直接收录示例，并链接至 BenchLineage 仓库、文档与软件包。')),
+])
+CREDITS.append(dict(name='eLabFTW', label=('Upstream integration test', '上游集成测试'),
+    quote='testImportBenchLineage',
+    summary=('Added a BenchLineage archive to the electronic lab notebook’s import tests, covering experiment creation and 20 linked uploads.', '将 BenchLineage 档案纳入电子实验记录平台的导入测试，覆盖实验创建与 20 个关联附件。'),
+    source='https://github.com/elabftw/elabftw/blob/master/tests/unit/Import/ElnTest.php',
+    pr='https://github.com/elabftw/elabftw/pull/7267',
+    credit=('The merged test and fixture are retained in the project’s official repository.', '已合并的测试与示例档案保留在项目官方仓库中。')))
+# Official directory, published release, reusable scientific-software examples.
+CREDITS = [CREDITS[i] for i in (1,0,6,7,4,5,2,3)]
+
+def cards(language, full=True):
+    out='<div class="credit-grid credit-featured">'
+    selected=CREDITS if full else [CREDITS[i] for i in (0,1,2,4)]
+    for n,c in enumerate(selected,1):
+        if full and n==3:
+            out+='</div><div class="section-title ledger-title"><h2>'+('Upstream work' if not language else '上游贡献')+'</h2></div><div class="credit-ledger">'
+        record=f'<div class="credit-record"><span class="credit-record-label">{"Project record" if not language else "项目方记录"}</span><blockquote>{escape(c["quote"])}</blockquote><p>{c["credit"][language]}</p></div>' if full and n<3 else f'<p class="credit-proof">{c["credit"][language]}</p>'
+        more=f'<a href="{c["extra"]}">{"Second contribution" if not language else "另一项贡献"} ↗</a>' if full and c.get('extra') else ''
+        out+=f'''<article class="credit-card"><div class="credit-heading"><div class="credit-card-top"><span class="credit-number">{n:02}</span><span class="eyebrow">{c['label'][language]}</span></div><h3><a href="{c['source']}">{c['name']} ↗</a></h3></div><div class="credit-body"><p class="credit-summary">{c['summary'][language]}</p>{record}</div><div class="credit-links"><a href="{c['source']}">{'Official record' if not language else '官方记录'} ↗</a><a href="{c['pr']}">{('Related issue' if not language else '相关问题') if c['name']=='tox' else ('Contribution' if not language else '查看贡献')} ↗</a>{more}</div></article>'''
     return out+'</div>'

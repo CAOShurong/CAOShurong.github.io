@@ -3,7 +3,7 @@ EMAIL = 'shurongcao0819@gmail.com'
 MASKED = '**********@link.cuhk.edu.hk'
 DATE = '2026-09-11'
 
-NAV = [('','Home','首页'),('research','Research','研究'),('publications','Publications','论文'),('projects','Projects','项目'),('experience','Experience','经历'),('cv','CV','简历')]
+NAV = [('','Home','首页'),('research','Research','研究'),('publications','Publications','论文'),('recognition','Contributions','开源贡献'),('projects','Projects','项目'),('experience','Experience','经历')]
 
 RESEARCH = [
  ('01', 'BEOL-compatible devices', 'BEOL 兼容器件',

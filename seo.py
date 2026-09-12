@@ -5,7 +5,7 @@ from html import escape
 ORIGIN = 'https://caoshurong.github.io'
 NAME = 'Shurong Cao'
 DESCRIPTIONS = {
-    'recognition': ('Official project acknowledgements of Shurong Cao (曹书嵘 / CAOShurong): GitHub MCP Server, CycloneDX, rclone and tox contributions.', '曹书嵘（Shurong Cao / CAOShurong）的开源贡献与项目官方署名：GitHub MCP Server、CycloneDX、rclone 与 tox。'),
+    'recognition': ('Official project acknowledgements of Shurong Cao (曹书嵘 / CAOShurong): CycloneDX, GitHub MCP Server, Plotly.js, Syft, rclone, tox and the BenchLineage upstream example.', '曹书嵘（Shurong Cao / CAOShurong）的开源贡献与项目官方署名：CycloneDX、GitHub MCP Server、Plotly.js、Syft、rclone、tox 与 BenchLineage 上游示例。'),
     '': (
         'Shurong Cao (曹书嵘 / CAOShurong), PhD student in Electronic Engineering at CUHK. Academic homepage: semiconductor devices, BEOL, monolithic 3D integration, publications and open-source projects.',
         '曹书嵘（Shurong Cao / CAOShurong）的个人学术主页。香港中文大学电子工程博士研究生，探索半导体器件、BEOL 低温工艺与单片三维集成，展示论文、工程项目及开源工作。'),

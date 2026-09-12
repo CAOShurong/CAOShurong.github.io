@@ -16,13 +16,11 @@
   const language = document.querySelector('.language-switch');
   language?.addEventListener('click', event => {
     try {
-      localStorage.setItem('academic-language', zh ? 'en' : 'zh');
       sessionStorage.setItem('academic-scroll', JSON.stringify({route:document.body.dataset.route, y:window.scrollY}));
     } catch (_) {}
     if (location.hash) language.href += location.hash;
   });
   try {
-    if (location.pathname === '/' && !location.search && localStorage.getItem('academic-language') === 'zh') location.replace('/zh/' + location.hash);
     const saved = JSON.parse(sessionStorage.getItem('academic-scroll') || 'null');
     if (saved?.route === document.body.dataset.route) {
       sessionStorage.removeItem('academic-scroll');

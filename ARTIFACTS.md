@@ -15,8 +15,8 @@ Public site assets. Private source CV and presentations excluded.
 | A9 | assets/fonts/instrument-serif.css | 2026-09-11 | 764 | 2879948aee8248c9fd060d66135fce9f208c75ba6697e409450dcf161631f92f | VERIFIED | ASSET_SOURCES.md |
 | A10 | assets/fonts/inter-web-0.woff2 | 2026-09-11 | 48256 | 3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62 | VERIFIED | ASSET_SOURCES.md |
 | A11 | assets/fonts/inter.css | 2026-09-11 | 1442 | 71d5221b6110ac49ccbb52526dc8d8d0fb17deaee3700233f360793f201311b0 | VERIFIED | ASSET_SOURCES.md |
-| A12 | assets/fonts/noto-serif-sc.css | 2026-09-11 | 188 | 0178ff6535131e598247a825c041ca370e6d9483ab961ae44b1c3172a37a0b75 | VERIFIED | ASSET_SOURCES.md |
-| A13 | assets/fonts/noto-serif-sc.woff2 | 2026-09-11 | 42076 | 4d583246159c9efd18f988dedcd1a3a7ebeceaf103d726ede857d0fc1cac010a | VERIFIED | ASSET_SOURCES.md |
+| A12 | assets/fonts/noto-serif-sc.css | 2026-09-13 | 4702 | 8db8ef7c9b0e8c0d46355f7f439833657be8ea92830add9ac4406ff42876ac7f | VERIFIED | ASSET_SOURCES.md |
+| A13 | assets/fonts/noto-serif-sc.woff2 | 2026-09-13 | 42076 | 4d583246159c9efd18f988dedcd1a3a7ebeceaf103d726ede857d0fc1cac010a | VERIFIED | ASSET_SOURCES.md |
 | A14 | assets/fonts/OFL-instrumentserif.txt | 2026-09-11 | 4498 | 918aca23eab7bf6b4bec8b3155432bdfc17985d2fbb2516c2629785bd1feff42 | VERIFIED | ASSET_SOURCES.md |
 | A15 | assets/fonts/OFL-inter.txt | 2026-09-11 | 4470 | f14f2b95a38f4f20cad4d27f7710593f37534c046641be0348da7c28365f4e39 | VERIFIED | ASSET_SOURCES.md |
 | A16 | assets/fonts/OFL-notoserifsc.txt | 2026-09-11 | 4444 | 64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907 | VERIFIED | ASSET_SOURCES.md |
@@ -38,12 +38,14 @@ Public site assets. Private source CV and presentations excluded.
 | A32 | assets/fonts/OFL-newsreader.txt | 2026-09-11 | 4486 | dca5a91eaf1d4a431e74801dfa745db53856bb92ec1f982506f837a00a5a94a7 | VERIFIED | ASSET_SOURCES.md |
 | A33 | assets/astropy-contribution.png | 2026-09-11 | 95437 | 74a8be44b3bf2769c8ab80e9b9b3d5a753998d7b00ef83e6ef7e1e8075ed5a9a | VERIFIED | ASSET_SOURCES.md |
 | A34 | assets/benchlineage-github.png | 2026-09-11 | 102071 | 1d8794301b1d602b12eaf33170281521c32784e549aa4fc0828fcb0da4c6e0e1 | VERIFIED | ASSET_SOURCES.md |
-| A35 | assets/fonts/noto-sans-sc-0.woff2 | 2026-09-13 | 82972 | a87eb07c1c26d1ae66f4112d3fdad9e5405d0b1a1304111e74c772448063c279 | VERIFIED | ASSET_SOURCES.md |
-| A36 | assets/fonts/noto-sans-sc-1.woff2 | 2026-09-13 | 76344 | 11c52ccdb6381c5736bb1ea5c7b20a67dee5c61a23408b02df27924d2f6b4b8c | VERIFIED | ASSET_SOURCES.md |
-| A37 | assets/fonts/noto-sans-sc.css | 2026-09-13 | 4572 | e63a3d2ad69e3e9a3d2496b24d8f09e44addde7f0e7404fca5fa70c5d2e2d308 | VERIFIED | ASSET_SOURCES.md |
+| A35 | assets/fonts/noto-sans-sc-0.woff2 | 2026-09-13 | 82576 | a2f8b3c9b6b58dee39f52a24ec9b70abcae63dd63800223c54c1d0f56c3acdb0 | VERIFIED | ASSET_SOURCES.md |
+| A36 | assets/fonts/noto-sans-sc-1.woff2 | 2026-09-13 | 81516 | f311b7b20481708eb1c1a63082832a73a4a2a5682cdc6612db23e5908fd78ba0 | VERIFIED | ASSET_SOURCES.md |
+| A37 | assets/fonts/noto-sans-sc.css | 2026-09-13 | 4698 | 5dea37bb1a83f1677e86ecd89afdb7b120869ef2bb6ee92b38d80111b6bb2aeb | VERIFIED | ASSET_SOURCES.md |
 | A38 | assets/fonts/OFL-notosanssc.txt | 2026-09-11 | 4481 | e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15 | VERIFIED | ASSET_SOURCES.md |
 | A39 | assets/github-mark-LICENSE.txt | 2026-09-11 | 1089 | c238f05b133887803259eefea2f82586b56c2452a9d8c75ad505c5ff5cdf3bd5 | VERIFIED | ASSET_SOURCES.md |
 | A40 | assets/github-mcp-contribution.png | 2026-09-11 | 92559 | 63612ef182676f9ad913e0ff370f2b19daeb14ed42ec113209ae1f04d18eea42 | VERIFIED | ASSET_SOURCES.md |
 | A41 | assets/fonts/allura-signature.woff2 | 2026-09-11 | 4508 | feec6c1f15a1ddba81ffe7bae5686afd438b97c1fdea3dbf56ab97c682fb66b8 | VERIFIED | ASSET_SOURCES.md |
 | A42 | assets/fonts/allura.css | 2026-09-11 | 180 | c59a847b6a86881611cd73a1b2a064439f3744a4ac52f2917d817041ccb6136c | VERIFIED | ASSET_SOURCES.md |
 | A43 | assets/fonts/OFL-allura.txt | 2026-09-11 | 4478 | c8cb4c94a558b6cb82ac5dc981a73a0b8aee35a5c52c8a7832fc0280c289ad49 | VERIFIED | ASSET_SOURCES.md |
+| ASERIF1 | assets/fonts/noto-serif-sc-0.woff2 | 2026-09-13 | 110908 | 0758b45e34ee061006ef8e8cd49aa2e442a5fdd1c3ffc637b25f2e16d786c711 | VERIFIED | Google Fonts OFL; refreshed public-text subset |
+| ASERIF2 | assets/fonts/noto-serif-sc-1.woff2 | 2026-09-13 | 109196 | d1cf796036c7c16d47f85f631870cc65b5d65021199e92d88bebf51e0cc47a68 | VERIFIED | Google Fonts OFL; refreshed public-text subset |
