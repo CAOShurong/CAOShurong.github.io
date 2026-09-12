@@ -38,3 +38,6 @@ Supersedes the active exploration portion of D-20260911-141200-v33links. Owner a
 
 ## D-20260913-005400-navlink
 Owner finds the separate arrow buttons/dropdown menus ugly and explicitly accepts removing this extra navigation layer. Keep direct Research/Publications/Projects links and existing destination pages; remove their submenu markup, styling and event handlers. Keep the responsive main menu. Preserve approved main content, both hosts, SEO changes and rollback snapshots.
+
+## D-20260913-012100-credits
+Owner requests prominent official project recognition with selected strong examples and source links. Use four verified records: GitHub MCP Server v1.12.0 New Contributors, CycloneDX official directory, rclone official S3 changelog and tox official release history. Add home section plus /recognition/ and /zh/recognition/, preserving simple header. Tox release links issue4021, not a pull request; label it related issue. Do not promote unsupported star/download metrics or infer organizational endorsement.

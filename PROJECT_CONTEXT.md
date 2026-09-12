@@ -26,3 +26,6 @@ Python stdlib build, bundled reportlab for CV, plain HTML/CSS/JS, authenticated 
 Complete EN/ZH pages and relevant detail routes, actual desktop/mobile visual review, functional navigation and language persistence, paper/project/CV/contact links, refresh/reopen, actual published URL validation, privacy audit and valid handoff fingerprints. Blocked checks explicitly recorded.
 ## Glossary
 BEOL = back-end-of-line; M3D = monolithic 3D. Upstream contributor is not automatically upstream maintainer. Confident academic writing; no repetitive evidence disclaimers on site.
+
+## Official project recognition
+Owner authorized a dedicated section and bilingual page for the strongest official contributor acknowledgements. Preserve the accepted site composition and direct navigation. Showcase GitHub MCP Server, CycloneDX, rclone and tox, with source links and concise technical contribution summaries; no implied employment, endorsement or maintainership. Keep GitHub Profile English-only and display ShurongCAO there; website Chinese identity remains for Chinese search.

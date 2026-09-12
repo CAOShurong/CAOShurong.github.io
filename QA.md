@@ -145,3 +145,9 @@ Current working-tree checks (previous sections are historical):
 
 ## 2026-09-13 — final acceptance, independent backup and search visibility
 Full-agent verification. Detailed commands, source/deployment IDs, actual Bing diagnosis/submissions, live browser results and limitations are recorded in SEARCH_VISIBILITY.md. Both root indexing requests succeeded; Bing live-tested Chinese URL is indexable with no SEO/GEO issues found. Completed indexing/ranking remains pending. Accepted visual body/CSS/JS preserved.
+
+## 2026-09-13 official recognition release
+Source d99592ff608cb6a4a4ee6b976070500bafab1664; Pages34707791987 success. Mirror ff0b68626f88103c89f052ce77ecac484f2fd4d4; Sites version5 appgprj_6aa3766f6b8481919bde2fee13651b01~appgver_a512ebf5c1a481919b1d38f492ed70f5; successful deployment appgdep_6aa58967e61881919021e2c258a6f5b0.
+PASS: build24routes, check_site25documents, check_search24primary/mirror, Chinese font subset600characters with versioned asset URLs. Local Chinese recognition screenshot inspected and corresponding English switch tested. Live primary homepage recognition link opened Chinese detail; actual official link opened GitHub v1.12.0 New Contributors. CycloneDX official page showed CAOShurong/CUHK in browser. rclone and tox fetched named entries; tox browser confirmed actual issue4021 destination. PR API confirmed merged CycloneDX1028 and rclone9823. Evidence is selected acknowledgements, not an updated full contribution census. Mobile browser NOT_RUN.
+
+Live mirror Chinese recognition page rendered correctly and was visually inspected after deployment.

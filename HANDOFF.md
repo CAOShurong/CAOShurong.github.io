@@ -1,38 +1,32 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 18
-updated_at: "2026-09-13T00:55:00+08:00"
+handoff_revision: 19
+updated_at: "2026-09-13T01:22:00+08:00"
 updated_by: Codex
-base_revision: git:f4ebe069ec75a011c79d624eaec385af1b9c01f8
-workspace_fingerprint: sha256:a0f9bdb02f3e0292816e8447b2877a70177e54f2d6bfc97dc5e77d9d77e49ca0
-context_fingerprint: sha256:d0d745e6c654b4f0598a30ffc32f9a2c0341e6b45f52ffd103080892aa270b44
+base_revision: git:d99592ff608cb6a4a4ee6b976070500bafab1664
+workspace_fingerprint: sha256:f715710090b6350a6861dc4ff368b2971c5fb6430e615bb853d0888b5af4ab4b
+context_fingerprint: sha256:027828ab5e32793debc4b2f4302ec2892f28d267051e91c956b6b4cf43e506e9
 status: complete
 ---
+
 # Project Handoff
 ## Current objective
-The owner accepted V3.3 as final, then requested a small header correction: remove the three separate dropdown buttons/menus, keep direct page links. Both hosts now publish this correction and search metadata. No redesign is pending.
+Dedicated official project recognition section and bilingual standalone page published. Preserve accepted V3.3 visual language, direct header navigation, previous backups and rollback versions. Chinese search currently awaits Bing crawling.
 ## Confirmed state
-- Primary source 8fa92317f6dff89106ff90de85b07a0c82b9d7ab, successful Pages run 34706518131. Search metadata source decd871.
-- Mirror source 6ec5221c132eca55a8ab78180f82f55ef21b1e50; existing public project appgprj_6aa3766f6b8481919bde2fee13651b01; successful deployment appgdep_6aa583645f2c8191a9650c97c8d0019e. Primary https://caoshurong.github.io/; mirror https://caoshurong.caoshurongg.chatgpt.site/.
-- Profile README source353a541 adds bilingual heading/explicit homepage link; actual click reaches primary. Account display-name save initially succeeded but final API/UI show ShurongCAO; do not overwrite subsequent edits or claim bilingual account name.
-- Independent D:/CAOShurong-Website-Backup/2026-09-13-approved-v3.3 snapshot preserves eb094086 source and 224 validated hashes, static primary/mirror, Profile and self-contained Git history. Final search/navigation snapshot is the sibling 2026-09-13-final-v3.3.1; inspect BACKUP.json for exact source.
-- Earlier V1/V2/V3/V3.1/V3.2/V3.3 rollback references remain; no history rewrite. Final release uses v3.3.1/archive/v3.3.1.
-## Search evidence
-Bing property verified; sitemap submitted, Processing with zero errors/warnings. Root was Discovered but not crawled; Chinese root Not discovered. Requested indexing for both and observed Indexing requested. Bing Live URL test for Chinese root: URL can be indexed, no SEO/GEO issues, two markup types. IndexNow22 URLs returned202, key validation pending. Actual indexing/rank remains pending; no first-place guarantee. Google Console NOT_RUN. Full evidence and IDs: SEARCH_VISIBILITY.md.
-## Verification evidence
-Full-agent. Build/check_site23 documents, check_search22 routes on primary/mirror, diff check passed. All23 main regions identical to approved backup; only navigation and search head changed. Actual D-backed homepage/research/language journey passed. Actual local direct Research/Publications/Projects clicks and corresponding Chinese route passed. Live primary Research/Projects and mirror Chinese Research verified. Header and mirror screenshots inspected. Cached old primary page resolved with normal reload. Fresh mobile, email delivery and printing NOT_RUN. A supplementary urllib sweep hit403, not counted as success; browser and Bing live fetch succeeded.
-## Durable constraints
-Retain masked university email, Gmail-first contact, actual portrait/figures and full attributions, scholarship without invented year, exploratory research wording, author order/stars without role labels. No private CV/email/phone/credentials in repository. Public verification meta/key file are intentionally public.
-## Archival note
-DESIGN_NOTES.md and the old ignored external-file design preview are archival. Browser previously prohibited workaround access to that draft; do not serve it indirectly. Final acceptance supersedes exploration as next task.
-## Next actions
-No implementation pending. After search processing, reinspect root and /zh/ using Bing Webmaster Tools if requested; use fresh exclusion reason before further changes. Maintain primary canonical on mirror. No automation requested.
-## Decisions referenced
-D-20260913-005000-finalseo; D-20260913-005400-navlink; prior factual/privacy decisions remain effective.
-
+Primary source d99592ff608cb6a4a4ee6b976070500bafab1664, Pages34707791987 success. Mirror ff0b68626f88103c89f052ce77ecac484f2fd4d4, existing public Sites project appgprj_6aa3766f6b8481919bde2fee13651b01, version5, deployment appgdep_6aa58967e61881919021e2c258a6f5b0 succeeded. Primary https://caoshurong.github.io/ and mirror https://caoshurong.caoshurongg.chatgpt.site/.
+Four cards: GitHub MCP Server v1.12.0 release credit, CycloneDX directory, rclone S3 changelog, tox release history. credits.py holds sources and bilingual copy. Home #recognition and /recognition/ in both languages. Tox record points to related issue4021, not PR4021.
+GitHub Profile is now English-only with ShurongCAO, clickable beige banner, white contribution panels; latest known source dd6191e. Respect PROFILE_DESIGN.md in that repo; do not restore bilingual heading or purple homepage banner.
+D:/CAOShurong-Website-Backup retains approved-v3.3 and final-v3.3.1 snapshots. New recognition snapshot: 2026-09-13-recognition-v3.3.2. Earlier tags/branches preserved.
 ## Changed artifacts
-seo.py, build.py, app.js, style.css, indexing/, scripts/check_search.py, scripts/sync_mirror.py, README.md and project documentation. Mirror static output and Profile README updated.
+credits.py, build.py, seo.py, style.css, Chinese font subsets/CSS, ARTIFACTS.md and project docs; mirror static output.
+## Verification evidence
+Full agent. Build24routes/check_site25documents/check_search24routes both copies passed. Chinese subset600characters refreshed. Local Chinese screenshot and English switching verified; actual live homepage-to-recognition and official GitHub release link clicked. CycloneDX official directory verified in browser. Detailed receipts in QA.md. Search Visibility records Chinese root Discovered but not crawled; previous submission accepted. New two recognition URLs IndexNow200 received, not proof of indexing.
 ## Risks and unknowns
-Search engine processing and ranking remain external and pending. Fresh mobile interaction verification was unavailable. Preserve the latest account display name rather than overwriting possible parallel edits.
+Full current contribution census not part of this release; older dated totals remain snapshots. Official credit is not employment/endorsement. Fresh mobile verification NOT_RUN. Preserve complete licensed figures, public Gmail and masked university email, exploratory research copy and original author order/stars without role labels. No credentials or private source documents in repositories. Old external design draft remains archival; browser prohibited workaround access.
+## Next actions
+No implementation pending. Reinspect Chinese Bing indexing after processing if requested; do not spam submissions. Keep mirror canonical on GitHub.io. Preserve recognition style when updating sources.
 ## User decisions required
-None for completed backup/navigation/search submissions.
+None. Owner may give visual feedback on the new cards.
+
+## Decisions referenced
+D-20260913-012100-credits; D-20260913-005400-navlink; prior factual/privacy decisions remain effective.
