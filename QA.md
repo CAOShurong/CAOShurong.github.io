@@ -142,3 +142,6 @@ Current working-tree checks (previous sections are historical):
 - PASS: actual mirror desktop Publications submenu > FALCO > full mechanism dialog > close; Chinese switch preserves /publications/#falco-wafer; signature returns to Chinese home. Chinese mobile first viewport at390px has edition3.2, no overflow or failed loaded images. Mobile Menu > CV works. CV download event observed and the PDF personally viewed in the normal desktop PDF viewer; served PDF bytes match the primary public PDF.
 - No factual content, research figures, authorship presentation, portrait, private source documents, or unrelated profile sections were changed. V3.1 remotely retained as v3.1.0/archive/v3.1 alongside all V1/V2/V3 references.
 - Sites handoff through open_in_codex returned queued for this task. A working Edge mirror tab is retained. Mail delivery, physical printing and physical assistive-device behavior NOT_RUN.
+
+## 2026-09-13 — final acceptance, independent backup and search visibility
+Full-agent verification. Detailed commands, source/deployment IDs, actual Bing diagnosis/submissions, live browser results and limitations are recorded in SEARCH_VISIBILITY.md. Both root indexing requests succeeded; Bing live-tested Chinese URL is indexable with no SEO/GEO issues found. Completed indexing/ranking remains pending. Accepted visual body/CSS/JS preserved.

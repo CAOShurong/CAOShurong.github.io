@@ -32,3 +32,9 @@ Owner requests refinement of V3, not another rebuild. Prioritize Guo Xie Birong 
 
 ## D-20260911-114600-v32sign
 Owner accepts the current composition and requests a dark-purple cursive CAOShurong homepage link, removal of the adjacent duplicate header name, and a lighter large GitHub Profile panel. Use local Allura and a pale lavender panel with dark text. Add a linked banner at the very top of the GitHub Profile README and set the account website to the academic homepage. Owner explicitly confirms a free public alternate URL; mirror validated static content on the registered Sites project. Preserve v3.1.0/archive/v3.1 at 8a7d51f as well as all earlier rollback references.
+
+## D-20260913-005000-finalseo
+Supersedes the active exploration portion of D-20260911-141200-v33links. Owner accepts current V3.3 as final and requests an independent backup outside Codex plus name-search visibility improvements. Preserve all appearance/content and prior rollback history. Store approved and search-enhanced snapshots under D:/CAOShurong-Website-Backup. Use GitHub.io as primary canonical across both hosts, clear bilingual researcher metadata, sitemap and IndexNow/Bing submissions. No guaranteed ranking and no unrelated project-site submissions. Do not restart the unaccepted design draft.
+
+## D-20260913-005400-navsimple
+Owner finds the separate arrow buttons/dropdown menus ugly and explicitly accepts removing this extra navigation layer. Keep direct Research/Publications/Projects links and existing destination pages; remove their submenu markup, styling and event handlers. Keep the responsive main menu. Preserve approved main content, both hosts, SEO changes and rollback snapshots.

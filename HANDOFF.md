@@ -1,41 +1,31 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 16
-updated_at: "2026-09-11T14:22:41+08:00"
+handoff_revision: 17
+updated_at: "2026-09-13T00:55:00+08:00"
 updated_by: Codex
-base_revision: git:a3b6e998475dde9227deed9b0ef0139780266832
-workspace_fingerprint: sha256:79e4d61e08e78cc9cca847887b173b31d14cc5303e9336c942061105b05a502b
-context_fingerprint: sha256:134955078372e2242fa3614df8b188ce6bea1b63e3f4660d3a8302b992914c20
+base_revision: git:8fa92317f6dff89106ff90de85b07a0c82b9d7ab
+workspace_fingerprint: sha256:a0f9bdb02f3e0292816e8447b2877a70177e54f2d6bfc97dc5e77d9d77e49ca0
+context_fingerprint: sha256:701c13fb211c04abfe68a8c8f49a71d0417ad987c8599e2a11c038c2c0f03747
 status: complete
 ---
 # Project Handoff
 ## Current objective
-V3.3 direct-link refinement is published on both existing public hosts. The owner likes the current homepage; preserve it and all old rollback versions. The request to explore better structure/palette and less monotonous subpages is documented as a proposal, not a shipped redesign. The owner explicitly means destination pages by second-level content.
+The owner accepted V3.3 as final, then requested a small header correction: remove the three separate dropdown buttons/menus, keep direct page links. Both hosts now publish this correction and search metadata. No redesign is pending.
 ## Confirmed state
-### Completed
-- Primary https://caoshurong.github.io/: source a3b6e998475dde9227deed9b0ef0139780266832; Pages 34569001315 succeeded.
-- Linked bilingual identity to CV, PhD role/research terms to matching research sections, affiliation/supervisor to official sites, paper titles to DOI/arXiv, and education/exchange content to official institutions. Education card overlay preserves separate supervisor keyboard access. Existing dropdown arrows are clearer.
-- Preserved Allura CAOShurong signature, pale GitHub feature, compact academic layout, real imagery and all factual/privacy constraints.
-- Public mirror https://caoshurong.caoshurongg.chatgpt.site/: source 4e2d6e055ebff3159a905992312d7aaabeb2618e; Sites version 2 and successful deployment appgdep_6aa39c6bc284819183d674f0ceb48f8d. Full IDs in QA.md. Exact project remains appgprj_6aa3766f6b8481919bde2fee13651b01 with static out/. Source credentials not persisted.
-- GitHub Profile ../caoshurong remains f29637c with its prominent homepage banner and account website. No profile changes this revision.
-- V1/V2/V3/V3.1/V3.2 remain remotely retained. V3.2=v3.2.0/archive/v3.2 at 3ea4904; V3.3=v3.3.0/archive/v3.3 at 399865a. Restore through ordinary commits, never history rewriting.
-### Design exploration
-- DESIGN_NOTES.md proposes near-white surfaces/dark-purple hierarchy; chapter/question-led research, year/figure/result-led papers, and contribution-led project cases. No replacement palette/layout selected or published.
-- Ignored work/make_design_exploration.py generated an English comparison at E:/Codex/Workspaces/Dated/2026-09-11/fancy-github/outputs/design-exploration/preview.html. It remains unverified and separate from site/. The browser rejected the file URL and prohibited workaround access. Do not serve or open it indirectly to circumvent that rejection.
-### Blocked
-No blocker for the published link scope. Fresh responsive verification was unavailable: viewport set returned success while actual width remained 3432px; overrides reset. Do not claim current mobile acceptance based on historical V3.2 results.
-## Changed artifacts
-build.py, style.css, DESIGN_NOTES.md, DECISIONS.md, PROJECT_CONTEXT.md, QA.md and this handoff. Mirror README.md and generated out/ synchronized. No public images, fonts, PDFs, profile content, or private source documents changed.
-
-## Verification evidence
-Full-agent capability. Build/check_site23 documents and diff check passed. Actual local EN/ZH links, arXiv title, institution entry center click, supervisor keyboard navigation, and submenu expansion tested. FALCO DOI was intercepted by existing Zotero proxy and reached CUHK library login; no settings changed or authenticated publisher access claimed. Primary live keyword and corresponding-language anchor tested. Mirror live name-to-CV and Chinese keyword-to-section tested. Primary EN and mirror ZH homepage screenshots inspected. Eight anonymous HTTP checks across both origins passed with edition 3.3 and original paper links. QA.md records exact limits.
-## Decisions referenced
-D-20260911-004500-pages; D-20260911-004501-content; D-20260911-030000-patent; D-20260911-083000-purple; D-20260911-100020-acadv3; D-20260911-120000-v31pol; D-20260911-114600-v32sign; D-20260911-141200-v33links.
-## Risks and unknowns
-Aesthetic selection remains the owner's. The external-file design draft is not visually accepted. Browser evaluate became inconsistent with mirror snapshots; use documented semantic/AX interactions and normal screenshots. Research remains exploratory. P-type figure stays complete, unmodified, noncommercial and source/license linked. No scholarship year inferred. Full institutional address/private phone must never be public. Mail delivery, printing and physical assistive hardware NOT_RUN.
+- Primary source 8fa92317f6dff89106ff90de85b07a0c82b9d7ab, successful Pages run 34706518131. Search metadata source decd871.
+- Mirror source 6ec5221c132eca55a8ab78180f82f55ef21b1e50; existing public project appgprj_6aa3766f6b8481919bde2fee13651b01; successful deployment appgdep_6aa583645f2c8191a9650c97c8d0019e. Primary https://caoshurong.github.io/; mirror https://caoshurong.caoshurongg.chatgpt.site/.
+- Profile README source353a541 adds bilingual heading/explicit homepage link; actual click reaches primary. Account display-name save initially succeeded but final API/UI show ShurongCAO; do not overwrite subsequent edits or claim bilingual account name.
+- Independent D:/CAOShurong-Website-Backup/2026-09-13-approved-v3.3 snapshot preserves eb094086 source and 224 validated hashes, static primary/mirror, Profile and self-contained Git history. Final search/navigation snapshot is the sibling 2026-09-13-final-v3.3.1; inspect BACKUP.json for exact source.
+- Earlier V1/V2/V3/V3.1/V3.2/V3.3 rollback references remain; no history rewrite. Final release uses v3.3.1/archive/v3.3.1.
+## Search evidence
+Bing property verified; sitemap submitted, Processing with zero errors/warnings. Root was Discovered but not crawled; Chinese root Not discovered. Requested indexing for both and observed Indexing requested. Bing Live URL test for Chinese root: URL can be indexed, no SEO/GEO issues, two markup types. IndexNow22 URLs returned202, key validation pending. Actual indexing/rank remains pending; no first-place guarantee. Google Console NOT_RUN. Full evidence and IDs: SEARCH_VISIBILITY.md.
+## Verification
+Full-agent. Build/check_site23 documents, check_search22 routes on primary/mirror, diff check passed. All23 main regions identical to approved backup; only navigation and search head changed. Actual D-backed homepage/research/language journey passed. Actual local direct Research/Publications/Projects clicks and corresponding Chinese route passed. Live primary Research/Projects and mirror Chinese Research verified. Header and mirror screenshots inspected. Cached old primary page resolved with normal reload. Fresh mobile, email delivery and printing NOT_RUN. A supplementary urllib sweep hit403, not counted as success; browser and Bing live fetch succeeded.
+## Durable constraints
+Retain masked university email, Gmail-first contact, actual portrait/figures and full attributions, scholarship without invented year, exploratory research wording, author order/stars without role labels. No private CV/email/phone/credentials in repository. Public verification meta/key file are intentionally public.
+## Archival note
+DESIGN_NOTES.md and the old ignored external-file design preview are archival. Browser previously prohibited workaround access to that draft; do not serve it indirectly. Final acceptance supersedes exploration as next task.
 ## Next actions
-1. Incorporate owner feedback on the separate subpage/palette proposals; preserve current accepted homepage and all old versions.
-2. After source edits: build/check, publish primary through Pages. Sync mirror using scripts/sync_mirror.py CHECKOUT --origin https://caoshurong.caoshurongg.chatgpt.site; commit/push/package and publish the existing Sites project. Use static out/ and Git Bash /e/ paths.
-3. Refresh Noto Sans SC subset for public Chinese text changes and visually inspect. Never add private source documents or credentials to either repository.
-## User decisions required
-No decision needed for the completed link release. Design alternatives remain proposals for further discussion.
+No implementation pending. After search processing, reinspect root and /zh/ using Bing Webmaster Tools if requested; use fresh exclusion reason before further changes. Maintain primary canonical on mirror. No automation requested.
+## Decisions referenced
+D-20260913-005000-finalseo; D-20260913-005400-navsimple; prior factual/privacy decisions remain effective.
