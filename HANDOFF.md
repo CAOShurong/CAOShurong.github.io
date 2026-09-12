@@ -1,32 +1,28 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 19
-updated_at: "2026-09-13T01:22:00+08:00"
+handoff_revision: 20
+updated_at: "2026-09-13T01:51:03+08:00"
 updated_by: Codex
-base_revision: git:d99592ff608cb6a4a4ee6b976070500bafab1664
-workspace_fingerprint: sha256:f715710090b6350a6861dc4ff368b2971c5fb6430e615bb853d0888b5af4ab4b
-context_fingerprint: sha256:027828ab5e32793debc4b2f4302ec2892f28d267051e91c956b6b4cf43e506e9
+base_revision: git:2a04c432c073262cbf0f1a11baa3fdaa501ef2bd
+workspace_fingerprint: sha256:09189eb0c6019b6458a34c36cf61e3f95243982c9156dc26b3764c7cf0d6c338
+context_fingerprint: sha256:344ffe49b2cac7ede27f16e4b71a347dab0290256467af3659504c665628af79
 status: complete
 ---
-
 # Project Handoff
 ## Current objective
-Dedicated official project recognition section and bilingual standalone page published. Preserve accepted V3.3 visual language, direct header navigation, previous backups and rollback versions. Chinese search currently awaits Bing crawling.
+V3.4 editorial refinement published after owner rejected repeated purple panels and the green alternative and asked for design research. Preserve research-first identity and documented factual/privacy choices. DESIGN_NOTES.md records primary design sources and applications.
 ## Confirmed state
-Primary source d99592ff608cb6a4a4ee6b976070500bafab1664, Pages34707791987 success. Mirror ff0b68626f88103c89f052ce77ecac484f2fd4d4, existing public Sites project appgprj_6aa3766f6b8481919bde2fee13651b01, version5, deployment appgdep_6aa58967e61881919021e2c258a6f5b0 succeeded. Primary https://caoshurong.github.io/ and mirror https://caoshurong.caoshurongg.chatgpt.site/.
-Four cards: GitHub MCP Server v1.12.0 release credit, CycloneDX directory, rclone S3 changelog, tox release history. credits.py holds sources and bilingual copy. Home #recognition and /recognition/ in both languages. Tox record points to related issue4021, not PR4021.
-GitHub Profile is now English-only with ShurongCAO, clickable beige banner, white contribution panels; latest known source dd6191e. Respect PROFILE_DESIGN.md in that repo; do not restore bilingual heading or purple homepage banner.
-D:/CAOShurong-Website-Backup retains approved-v3.3 and final-v3.3.1 snapshots. New recognition snapshot: 2026-09-13-recognition-v3.3.2. Earlier tags/branches preserved.
+Primary content2a04c432c073262cbf0f1a11baa3fdaa501ef2bd, Pages34709254272 success. Mirror a5588da9b61fb504a324a4d6fc406f829ae61ca3, existing public project appgprj_6aa3766f6b8481919bde2fee13651b01, Sites version6, deployment appgdep_6aa5906670188191a847e66a6fdcca9f succeeded. URLs https://caoshurong.github.io/ and https://caoshurong.caoshurongg.chatgpt.site/.
+Warm white content, charcoal text, purple identity/links. Song-style Chinese headings with self-hosted refreshed fonts. Distinct research image/text, publication reading, project-gallery and contribution highlight/ledger compositions. Eight official records in credits.py plus BenchLineage and Astropy screenshot links. Home formerly repeated open-source sections unified. Contributions navigation follows Publications; CV entry points removed, legacy CV routes retained. Root always English regardless of old storage; explicit /zh/ is Chinese.
 ## Changed artifacts
-credits.py, build.py, seo.py, style.css, Chinese font subsets/CSS, ARTIFACTS.md and project docs; mirror static output.
+build.py, content.py, credits.py, seo.py, app.js, style.css, font refresh script and subsets, ARTIFACTS.md, DESIGN_NOTES.md, context/decisions/QA, mirror output.
 ## Verification evidence
-Full agent. Build24routes/check_site25documents/check_search24routes both copies passed. Chinese subset600characters refreshed. Local Chinese screenshot and English switching verified; actual live homepage-to-recognition and official GitHub release link clicked. CycloneDX official directory verified in browser. Detailed receipts in QA.md. Search Visibility records Chinese root Discovered but not crawled; previous submission accepted. New two recognition URLs IndexNow200 received, not proof of indexing.
+Full agent. Build and both checks pass. Eight live route probes200 with edition3.4. Browser desktop/local/live interactions and screenshots; final mirror390px Chinese contributions/research no overflow, mobile menu works. Chinese-to-root plus reload remains English. All details in QA.md.
 ## Risks and unknowns
-Full current contribution census not part of this release; older dated totals remain snapshots. Official credit is not employment/endorsement. Fresh mobile verification NOT_RUN. Preserve complete licensed figures, public Gmail and masked university email, exploratory research copy and original author order/stars without role labels. No credentials or private source documents in repositories. Old external design draft remains archival; browser prohibited workaround access.
+User aesthetic approval remains pending feedback; do not call the new design owner-approved. No fresh full GitHub contribution census or search ranking audit. Official recognition does not imply employment or upstream maintainership. Preserve masked school email and public Gmail. Prior v1/v2/v3 rollback tags/backups remain. GitHub Profile separate English-only ShurongCAO design was not edited.
 ## Next actions
-No implementation pending. Reinspect Chinese Bing indexing after processing if requested; do not spam submissions. Keep mirror canonical on GitHub.io. Preserve recognition style when updating sources.
+No implementation pending in this revision. Preserve new v3.4.0/archive-v3.4 and independent D:/CAOShurong-Website-Backup/2026-09-13-editorial-v3.4 snapshot alongside all old versions. Further aesthetic feedback can be applied without reverting substantive contribution/navigation changes.
 ## User decisions required
-None. Owner may give visual feedback on the new cards.
-
+None for publication; owner may evaluate design.
 ## Decisions referenced
-D-20260913-012100-credits; D-20260913-005400-navlink; prior factual/privacy decisions remain effective.
+D-20260913-023000-editorial; D-20260913-012100-credits; prior factual/privacy decisions.

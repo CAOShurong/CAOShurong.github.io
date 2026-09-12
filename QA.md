@@ -151,3 +151,16 @@ Source d99592ff608cb6a4a4ee6b976070500bafab1664; Pages34707791987 success. Mirro
 PASS: build24routes, check_site25documents, check_search24primary/mirror, Chinese font subset600characters with versioned asset URLs. Local Chinese recognition screenshot inspected and corresponding English switch tested. Live primary homepage recognition link opened Chinese detail; actual official link opened GitHub v1.12.0 New Contributors. CycloneDX official page showed CAOShurong/CUHK in browser. rclone and tox fetched named entries; tox browser confirmed actual issue4021 destination. PR API confirmed merged CycloneDX1028 and rclone9823. Evidence is selected acknowledgements, not an updated full contribution census. Mobile browser NOT_RUN.
 
 Live mirror Chinese recognition page rendered correctly and was visually inspected after deployment.
+
+
+## 2026-09-13 V3.4 editorial and contributions acceptance
+- Full-agent execution. Primary source 2a04c432c073262cbf0f1a11baa3fdaa501ef2bd. GitHub Pages run34709254272 completed successfully.
+- Mirror a5588da9b61fb504a324a4d6fc406f829ae61ca3, Sites version6, deployment appgdep_6aa5906670188191a847e66a6fdcca9f succeeded.
+- Build24routes, check_site25HTML documents, check_search24canonical routes, git diff --check passed.
+- Eight live EN/ZH home/recognition requests across both hosts returned200 and edition3.4.
+- Edge browser screenshots: Chinese home, English research/publications/projects/contact, Chinese experience, both languages contributions. Checked actual heading font Noto Serif SC and completed animation opacity1.
+- Interactions: header navigation, home contribution anchor, home-to-full contribution page, BenchLineage project detail, paper citation expansion, language switch, official TheELNFileFormat source link.
+- Final live mirror responsive: actual innerWidth390, scrollWidth375; contribution ledger single329px column, no horizontal overflow. Mobile menu expanded and navigated to Chinese research; screenshot confirms image followed by readable text. Viewport overrides reset.
+- English-root behavior: visited Chinese then root and reloaded, remained lang=en on both local and final mirror. Removed academic-language storage/redirect code entirely.
+- Seven original/new official sources returned200 and visible name/example evidence. eLabFTW7267 merge verified via GitHub API and current official ElnTest.php retains testImportBenchLineage and fixture. Plotly changelog includes both7959 and7981; Syft1.51.1 includes5179; ELN152 merged and example retained. No claim of homepage textual credit for eLabFTW.
+- This is an implemented visual revision, not an assertion of user approval or universal aesthetic quality. Chinese search rankings were not rechecked; prior indexing status is historical.
