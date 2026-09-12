@@ -148,13 +148,6 @@ def shell(path,l,body,title,not_found=False):
     for p,en,zh in NAV:
         current='aria-current="page"' if path.split('/')[0]==p else ''
         item=f'<a href="{url(p,l)}" {current}>{zh if l else en}</a>'
-        children=[]
-        if p=='research':children=[(url(p,l)+'#theme-'+r[0],r[2 if l else 1]) for r in RESEARCH]
-        if p=='projects':children=[(url('projects/'+r['id'],l),r['title'][l]) for r in PROJECTS]+[(url('projects',l)+'#upstream',tx('Upstream contributions','上游开源贡献',l))]
-        if p=='publications':children=[(url(p,l)+'#'+r['id'],r['short']) for r in PAPERS]
-        if children:
-            label=tx(en+' submenu',zh+'子菜单',l)
-            item=f'<div class="nav-group">{item}<button class="submenu-toggle" aria-expanded="false" aria-controls="sub-{p}" aria-label="{label}">⌄</button><div class="submenu" id="sub-{p}">'+''.join(link(u,t) for u,t in children)+'</div></div>'
         nav+=item
     hero_preload='<link rel="preload" as="image" href="/assets/portrait-2026.jpg">' if not path else ''
     search_metadata=metadata(path,l,title,not_found=not_found)
