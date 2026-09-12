@@ -5,6 +5,7 @@ import shutil
 import json
 import hashlib
 from content import *
+from seo import metadata
 
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'site'
@@ -140,7 +141,7 @@ def cv(l):
     s+=f'<section class="section">{section(tx("Contact","联系",l))}<p>{link("mailto:"+EMAIL,EMAIL)} · {link("https://github.com/CAOShurong","GitHub")}</p></section>'
     return s
 
-def shell(path,l,body,title):
+def shell(path,l,body,title,not_found=False):
     language='zh-CN' if l else 'en'
     alt=url(path,1-l)
     nav=''
@@ -156,9 +157,9 @@ def shell(path,l,body,title):
             item=f'<div class="nav-group">{item}<button class="submenu-toggle" aria-expanded="false" aria-controls="sub-{p}" aria-label="{label}">⌄</button><div class="submenu" id="sub-{p}">'+''.join(link(u,t) for u,t in children)+'</div></div>'
         nav+=item
     hero_preload='<link rel="preload" as="image" href="/assets/portrait-2026.jpg">' if not path else ''
-    description=tx('Shurong Cao, PhD student in Electronic Engineering at CUHK. Semiconductor devices, BEOL-compatible electronics, monolithic 3D integration, and open-source engineering.','曹书嵘，香港中文大学电子工程博士研究生。探索半导体器件、BEOL 兼容工艺与单片三维集成，参与工程实践和开源协作。',l)
+    search_metadata=metadata(path,l,title,not_found=not_found)
     return f'''<!doctype html>
-<html lang="{language}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#faf9fc"><title>{esc(title)} | {tx('Shurong Cao','曹书嵘',l)}</title><meta name="description" content="{description}"><link rel="canonical" href="{ORIGIN+url(path,l)}"><link rel="alternate" hreflang="en" href="{ORIGIN+url(path,0)}"><link rel="alternate" hreflang="zh-Hans" href="{ORIGIN+url(path,1)}"><link rel="alternate" hreflang="x-default" href="{ORIGIN+url(path,0)}"><meta property="og:title" content="{esc(title)} | Shurong Cao"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="{ORIGIN+url(path,l)}"><link rel="icon" href="/favicon.svg?v=3.1" type="image/svg+xml">{hero_preload}<link rel="stylesheet" href="/style.css?v={ASSET_VERSION}"><script src="/app.js?v={ASSET_VERSION}" defer></script></head>
+<html lang="{language}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#faf9fc">{search_metadata}<link rel="icon" href="/favicon.svg?v=3.1" type="image/svg+xml">{hero_preload}<link rel="stylesheet" href="/style.css?v={ASSET_VERSION}"><script src="/app.js?v={ASSET_VERSION}" defer></script></head>
 <body data-edition="3.3" data-language="{language}" data-route="{path}"><a class="skip" href="#main">{tx('Skip to content','跳转到正文',l)}</a><div class="reading-progress" aria-hidden="true"></div><header class="site-header"><div class="header-inner"><a class="signature-wordmark" href="{url('',l)}" aria-label="{tx('CAOShurong — Home','CAOShurong — 首页',l)}">CAOShurong</a><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="navigation">{tx('Menu','菜单',l)} <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="{tx('Main navigation','主导航',l)}">{nav}<a href="{url('contact',l)}" {"aria-current=page" if path=='contact' else ''}>{tx('Contact','联系',l)}</a><a class="github-nav" href="https://github.com/CAOShurong">GitHub ↗</a></nav><a class="language-switch" href="{alt}" lang="{'en' if l else 'zh-CN'}" hreflang="{'en' if l else 'zh-Hans'}" aria-label="{tx('切换到中文','Switch to English',l)}">{tx('中文','EN',l)}</a></div></header><main id="main" class="container { 'home' if not path else 'inner-page'}">{body}</main><footer class="site-footer"><div class="container"><div><a class="wordmark" href="{url('',l)}">{tx('Shurong Cao','曹书嵘',l)}</a><p>{tx('Semiconductor devices · Fabrication · Integration','半导体器件 · 工艺 · 集成',l)}</p></div><div class="footer-links"><button class="motion-toggle" type="button" aria-pressed="false">{tx("Pause motion Ⅱ","暂停动效 Ⅱ",l)}</button>{link('https://github.com/CAOShurong','GitHub ↗')}{link('mailto:'+EMAIL,tx('Email','邮件',l)+' ↗')}{link(url('contact',l),tx('Contact','联系',l))}</div><p class="copyright">© 2026 Shurong Cao · {tx('Updated September 2026','更新于 2026 年 9 月',l)}</p></div></footer></body></html>'''
 
 def build():
@@ -176,7 +177,9 @@ def build():
             (target/'index.html').write_text(shell(path,l,fn(l),title[l]),encoding='utf-8')
             paths.append(ORIGIN+url(path,l))
     for p in PAPERS:(OUT/'assets'/f'{p["id"]}.bib').write_text(p['bib'],encoding='utf-8')
-    (OUT/'404.html').write_text(shell('',0,heading('404','This page has moved.','Return to the homepage to continue exploring.')+link('/','Back to home →','button'),'Page not found'),encoding='utf-8')
+    (OUT/'404.html').write_text(shell('',0,heading('404','This page has moved.','Return to the homepage to continue exploring.')+link('/','Back to home →','button'),'Page not found',not_found=True),encoding='utf-8')
+    for verification in (ROOT/'indexing').glob('*.txt'):
+        shutil.copy2(verification,OUT/verification.name)
     (OUT/'.nojekyll').touch()
     (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+ORIGIN+'/sitemap.xml\n')
     (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+u+'</loc></url>' for u in paths)+'</urlset>',encoding='utf-8')

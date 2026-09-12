@@ -1,4 +1,8 @@
-# CAO Shurong — academic website
+# Shurong Cao · 曹书嵘 — Academic Homepage
+
+[**Visit my academic homepage / 访问个人主页 →**](https://caoshurong.github.io/)
+
+Shurong Cao (曹书嵘 / CAOShurong), PhD student in Electronic Engineering at The Chinese University of Hong Kong. Research interests include semiconductor devices, BEOL-compatible electronics and monolithic 3D integration.
 
 English / Chinese academic website for GitHub Pages. No paid services, runtime dependencies, analytics, or tracking.
 

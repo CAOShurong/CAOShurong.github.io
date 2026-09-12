@@ -28,18 +28,16 @@ def main():
     public = target / "out"
     # Preserve unrelated files. Review stale routes explicitly on future syncs.
     shutil.copytree(source, public, dirs_exist_ok=True)
-    for path in public.rglob("*"):
-        if path.is_file() and path.suffix in {".html", ".xml", ".txt"}:
-            text = path.read_text(encoding="utf-8")
-            if PRIMARY in text:
-                path.write_text(text.replace(PRIMARY, origin), encoding="utf-8")
+    # The alternate host serves identical content. Preserve the primary origin
+    # in canonicals, hreflang, structured identity and sitemap to consolidate
+    # discovery on the academic homepage instead of competing duplicates.
     sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     (target / "README.md").write_text(
         "# Shurong Cao academic website — public mirror\n\n"
         f"Primary: {PRIMARY}/\n\nMirror: {origin}/\n\n"
         f"Primary source commit: `{sha}`\n\n"
-        "Static output copied from the validated primary website. Only absolute "
-        "site-origin metadata is adapted; root-relative navigation and all public "
+        "Static output copied from the validated primary website. Search metadata "
+        "retains the GitHub Pages canonical origin; root-relative navigation and all public "
         "research content/assets are shared. Asset provenance and licenses are "
         "documented in the primary source repository. No private source documents "
         "or credentials belong here.\n\n"
