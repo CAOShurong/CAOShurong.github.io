@@ -36,5 +36,5 @@ Owner accepts the current composition and requests a dark-purple cursive CAOShur
 ## D-20260913-005000-finalseo
 Supersedes the active exploration portion of D-20260911-141200-v33links. Owner accepts current V3.3 as final and requests an independent backup outside Codex plus name-search visibility improvements. Preserve all appearance/content and prior rollback history. Store approved and search-enhanced snapshots under D:/CAOShurong-Website-Backup. Use GitHub.io as primary canonical across both hosts, clear bilingual researcher metadata, sitemap and IndexNow/Bing submissions. No guaranteed ranking and no unrelated project-site submissions. Do not restart the unaccepted design draft.
 
-## D-20260913-005400-navsimple
+## D-20260913-005400-navlink
 Owner finds the separate arrow buttons/dropdown menus ugly and explicitly accepts removing this extra navigation layer. Keep direct Research/Publications/Projects links and existing destination pages; remove their submenu markup, styling and event handlers. Keep the responsive main menu. Preserve approved main content, both hosts, SEO changes and rollback snapshots.

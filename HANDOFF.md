@@ -1,11 +1,11 @@
 ---
 schema_version: portable-project-memory/v1
-handoff_revision: 17
+handoff_revision: 18
 updated_at: "2026-09-13T00:55:00+08:00"
 updated_by: Codex
-base_revision: git:8fa92317f6dff89106ff90de85b07a0c82b9d7ab
+base_revision: git:f4ebe069ec75a011c79d624eaec385af1b9c01f8
 workspace_fingerprint: sha256:a0f9bdb02f3e0292816e8447b2877a70177e54f2d6bfc97dc5e77d9d77e49ca0
-context_fingerprint: sha256:701c13fb211c04abfe68a8c8f49a71d0417ad987c8599e2a11c038c2c0f03747
+context_fingerprint: sha256:d0d745e6c654b4f0598a30ffc32f9a2c0341e6b45f52ffd103080892aa270b44
 status: complete
 ---
 # Project Handoff
@@ -19,7 +19,7 @@ The owner accepted V3.3 as final, then requested a small header correction: remo
 - Earlier V1/V2/V3/V3.1/V3.2/V3.3 rollback references remain; no history rewrite. Final release uses v3.3.1/archive/v3.3.1.
 ## Search evidence
 Bing property verified; sitemap submitted, Processing with zero errors/warnings. Root was Discovered but not crawled; Chinese root Not discovered. Requested indexing for both and observed Indexing requested. Bing Live URL test for Chinese root: URL can be indexed, no SEO/GEO issues, two markup types. IndexNow22 URLs returned202, key validation pending. Actual indexing/rank remains pending; no first-place guarantee. Google Console NOT_RUN. Full evidence and IDs: SEARCH_VISIBILITY.md.
-## Verification
+## Verification evidence
 Full-agent. Build/check_site23 documents, check_search22 routes on primary/mirror, diff check passed. All23 main regions identical to approved backup; only navigation and search head changed. Actual D-backed homepage/research/language journey passed. Actual local direct Research/Publications/Projects clicks and corresponding Chinese route passed. Live primary Research/Projects and mirror Chinese Research verified. Header and mirror screenshots inspected. Cached old primary page resolved with normal reload. Fresh mobile, email delivery and printing NOT_RUN. A supplementary urllib sweep hit403, not counted as success; browser and Bing live fetch succeeded.
 ## Durable constraints
 Retain masked university email, Gmail-first contact, actual portrait/figures and full attributions, scholarship without invented year, exploratory research wording, author order/stars without role labels. No private CV/email/phone/credentials in repository. Public verification meta/key file are intentionally public.
@@ -28,4 +28,11 @@ DESIGN_NOTES.md and the old ignored external-file design preview are archival. B
 ## Next actions
 No implementation pending. After search processing, reinspect root and /zh/ using Bing Webmaster Tools if requested; use fresh exclusion reason before further changes. Maintain primary canonical on mirror. No automation requested.
 ## Decisions referenced
-D-20260913-005000-finalseo; D-20260913-005400-navsimple; prior factual/privacy decisions remain effective.
+D-20260913-005000-finalseo; D-20260913-005400-navlink; prior factual/privacy decisions remain effective.
+
+## Changed artifacts
+seo.py, build.py, app.js, style.css, indexing/, scripts/check_search.py, scripts/sync_mirror.py, README.md and project documentation. Mirror static output and Profile README updated.
+## Risks and unknowns
+Search engine processing and ranking remain external and pending. Fresh mobile interaction verification was unavailable. Preserve the latest account display name rather than overwriting possible parallel edits.
+## User decisions required
+None for completed backup/navigation/search submissions.
